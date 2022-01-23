@@ -77,6 +77,7 @@ main {
   height: 45px;
   margin-bottom: 30px;
   align-self: flex-end;
+  border-radius: 0px 0px 0px 30px;
 }
 
 .title--container {
@@ -99,6 +100,7 @@ main {
   align-items: flex-end;
   grid-column: 1 / 3;
   grid-row: 1 / 3;
+  border-radius: 15px 40px 10px 35px;
 }
 
 .title--name {
@@ -125,6 +127,7 @@ main {
   align-items: flex-end;
   grid-column: 2 / 4;
   grid-row: 2 / 4;
+  border-radius: 10px 0px 0px 40px;
 }
 
 .title--position {
@@ -159,6 +162,7 @@ main {
   width: 81%;
   height: 255px;
   position: relative;
+  border-radius: 0px 40px 15px 0px;
 }
 
 .quotes--learning-container {
@@ -169,17 +173,19 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  border-radius: 0px 25px 10px 0px;
 }
 
 .quotes--learning-container p {
   width: 80%;
   color: var(--black);
   text-shadow: 0px 0px 2.5px rgba(30,50,66, 0.4);
+  font-weight: 600;
   margin-right: 13px;
 }
 
 .quotes--talent-container {
-  width: 175px;
+  width: 65%;
   height: 105px;
   position: absolute;
   top: 70.6%;
@@ -187,11 +193,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px 35px 10px 40px;
 }
 
 .quotes--talent-container p {
-  width: 85%;
+  width: 90%;
   text-align: right;
+  margin-right: 15px;
 }
 
 .quotes--decoration {
@@ -200,6 +208,7 @@ main {
   position: absolute;
   top: 23.5%;
   left: 66%;
+  border-radius: 45px 10px 35px 20px;
 }
 
 .quotes--litle-container {
@@ -219,6 +228,7 @@ main {
   justify-content: center;
   align-items: center;
   grid-area: 1 / 2 / 3 / 4;
+  border-radius: 40px 0px 0px 15px;
 }
 
 .quote--inclussion-container p {
@@ -233,12 +243,13 @@ main {
   justify-content: flex-start;
   align-items: center;
   grid-area: 2 / 1 / 4 / 3;
+  border-radius: 10px 30px 15px 50px;
 }
 
 .quotes--help-container p {
   width: 61.5%;
-  margin-left: 15px;
-  margin-top: 10px;
+  margin-left: 10%;
+  margin-top: 5px;
 }
 
 .contact--container {
@@ -255,6 +266,7 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   grid-area: 1 / 2 / 2 / 4;
+  border-radius: 50px 0px 0px 15px;
 }
 
 .contact--title-container h3 {
@@ -269,6 +281,7 @@ main {
   align-items: center;
   gap: 25px;
   grid-area: 2 / 3 / 5 / 4;
+  border-radius: 50px 0px 0px 0px;
 }
 
 .contact--button {
@@ -276,6 +289,7 @@ main {
   height: 35px;
   background-color: var(--black);
   border: none;
+  border-radius: 8px;
 }
 
 .contact--button a{
@@ -295,4 +309,5 @@ main {
   margin-left: -4px;
   margin-bottom: -4px;
   grid-area: 4 / 1 / 5 / 2;
+  border-radius: 0px 50px 0px 0px;
 }

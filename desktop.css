@@ -24,6 +24,7 @@ main {
   margin-right: 0;
   grid-area: 2 / 3 / 5 / 7;
 }
+
 .title--position {
   margin-left: 6%;
 }
@@ -31,6 +32,7 @@ main {
 .coming--container {
   width: 100%;
   grid-area: 4 / 1 / 6 / 4;
+  margin: 0;
 }
 
 .quotes--big-container{
@@ -47,6 +49,7 @@ main {
   box-shadow:
     0px 0px 25px -6px rgba(255, 112, 46, 0.6),
     inset 0px 0px 20px -6px rgba(255, 112, 46, 0.6);
+  border-radius: 0% 11% 0% 0% / 0% 18% 0% 0%;
 }
 
 .quotes--learning-container {
@@ -66,6 +69,7 @@ main {
   top: 67%;
   background-color: var(--orange);
   box-shadow: 0px 0px 25px -6px rgba(255, 112, 46, 0.6);
+  border-radius: 8% 20% 0% 0% / 17% 44% 0% 0%;
 }
 
 .quotes--talent-container p {
@@ -81,6 +85,7 @@ main {
   box-shadow:
     0px 0px 20px -4.5px rgba(12, 69, 173, 0.6),
     inset 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6);
+  border-radius: 25% 6% 0% 0% / 24% 5% 0% 0%;
 }
 
 .quotes--litle-container {
@@ -93,6 +98,7 @@ main {
 .quote--inclussion-container {
   background-color: var(--orange);
   box-shadow: 0px 0px 25px -6px rgba(255, 112, 46, 0.6);
+  border-radius: 0% 0% 23% 0% / 0% 0% 42% 0%;
 }
 
 .quote--inclussion-container p {
@@ -122,6 +128,7 @@ main {
 .contact--links-container {
   gap: 28px;
   grid-area: 2 / 2 / 4 / 3;
+  border-radius: 34% 0% 0% 0% / 19% 0% 0% 0%;
 }
 
 .contact--button {

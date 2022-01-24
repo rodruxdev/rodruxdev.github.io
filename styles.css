@@ -93,7 +93,6 @@ main {
 
 .title--name-container {
   max-width: 330px;
-  height: 135px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -121,9 +120,8 @@ main {
 
 .title--position-container {
   max-width: 295px;
-  height: 120px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
   grid-column: 2 / 4;
   grid-row: 2 / 4;
@@ -132,7 +130,7 @@ main {
 
 .title--position {
   margin-bottom: 20px;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .coming--container{
@@ -172,7 +170,7 @@ main {
   top: 10%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   border-radius: 0px 25px 10px 0px;
 }
 
@@ -181,7 +179,6 @@ main {
   color: var(--black);
   text-shadow: 0px 0px 2.5px rgba(30,50,66, 0.4);
   font-weight: 600;
-  margin-right: 13px;
 }
 
 .quotes--talent-container {
@@ -197,9 +194,9 @@ main {
 }
 
 .quotes--talent-container p {
-  width: 90%;
+  width: 85%;
   text-align: right;
-  margin-right: 15px;
+  margin-right: 5%;
 }
 
 .quotes--decoration {
@@ -223,7 +220,6 @@ main {
 }
 
 .quote--inclussion-container {
-  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,7 +234,6 @@ main {
 }
 
 .quotes--help-container {
-  height: 105px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -261,11 +256,10 @@ main {
 }
 
 .contact--title-container {
-  height: 135px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 2 / 3 / 4;
   border-radius: 50px 0px 0px 15px;
 }
 
@@ -274,7 +268,6 @@ main {
 }
 
 .contact--links-container {
-  height: 255px;
   display: flex;
   flex-direction: column;
   justify-content: center;

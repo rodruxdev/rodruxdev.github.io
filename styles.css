@@ -145,7 +145,7 @@ main {
   align-self: flex-start;
 }
 
-.coming--container p{
+.coming--container p {
   font-size: 4.4rem;
   font-weight: bold;
   margin-left: 15px;
@@ -292,7 +292,7 @@ main {
   border-radius: 8px;
 }
 
-.contact--button a{
+.contact--button a {
   height: 100%;
   display: flex;
   justify-content: center;

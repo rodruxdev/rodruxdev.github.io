@@ -1,0 +1,159 @@
+a {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 3.4rem;
+}
+
+.blue-border {
+  border: 8px solid var(--blue);
+}
+
+.orange-border {
+  border: 8px solid var(--orange);
+}
+
+.blue-header{
+  width: 54.2%;
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+.title--container{
+  max-width: 750px;
+  width: 95.6%;
+  height: 405px;
+  grid-template-columns: 39.2% 44.1% 16.7%;
+  grid-template-rows: 1fr 124px 124px;
+  margin-right: -8px;
+}
+
+.title--name-container {
+  max-width: none;
+  height: 280px;
+}
+
+.title--name,
+.title--nickname {
+  font-size: 6.8rem;
+}
+
+.title--position-container {
+  max-width: none;
+  height: 250px;
+}
+
+.title--position{
+  margin-bottom: 55px;
+}
+
+.coming--container {
+  width: 94.1%;
+  height: 137px;
+}
+
+.coming--container p {
+  font-size: 9rem;
+}
+
+.quotes--big-container{
+  width: 95.8%;
+  height: 728px;
+  margin-left: -8px;
+  margin-bottom: 60px;
+}
+
+.quotes--container {
+  width: 83.7%;
+  height: 570px;
+}
+
+.quotes--learning-container {
+  width: 52.3%;
+  height: 185px;
+}
+
+.quotes--learning-container p {
+  margin-right: 30px;
+}
+
+.quotes--talent-container {
+  width: 65%;
+  height: 215px;
+}
+
+.quotes--talent-container p {
+  margin-right: 45px;
+}
+
+.quotes--decoration {
+  width: 43%;
+  height: 590px;
+}
+
+.quotes--litle-container {
+  max-width: 780px;
+  width: 87.4%;
+  height: 370px;
+  grid-template-columns: 42.7% 14.3% 43%;
+  grid-template-rows: auto 90px 124px;
+  margin-bottom: 60px;
+}
+
+.quote--inclussion-container {
+  max-width: none;
+  height: 250px;
+}
+
+.quote--inclussion-container p {
+  width: 72.5%;
+}
+
+.quotes--help-container {
+  max-width: none;
+  height: 215px;
+}
+
+.quotes--help-container p {
+  width: 72.5%;
+}
+
+.contact--container {
+  height: 537px;
+  grid-template-columns: 29.2% 124px auto;
+  grid-template-rows: 90px 150px 70px auto;
+}
+
+.contact--title-container {
+  height: 240px;
+}
+
+.contact--links-container {
+  height: 435px;
+  gap: 44px;
+}
+
+.contact--button {
+  width: 69.5%;
+  height: 60px;
+}
+
+.contact--button a {
+  gap: 10px;
+}
+
+.contact--button-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.mobile-decoration {
+  margin-left: -8px;
+  margin-bottom: -8px;
+  height: 240px;
+}

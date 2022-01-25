@@ -45,7 +45,10 @@ main {
   flex-direction: column;
   overflow: hidden;
 }
-
+p > span {
+  font-style: italic;
+  font-size: 1.2rem;
+}
 .blue-box {
   background-color: var(--blue);
   box-shadow: 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6);
@@ -106,7 +109,7 @@ main {
   font-size: 3.2rem;
   letter-spacing: -0.02rem;
   font-weight: 600;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
   margin-right: 4%;
 }
 
@@ -164,7 +167,7 @@ main {
 }
 
 .quotes--learning-container {
-  width: 150px;
+  width: 49.2%;
   height: 90px;
   position: absolute;
   top: 10%;
@@ -182,7 +185,7 @@ main {
 }
 
 .quotes--talent-container {
-  width: 65%;
+  width: 64%;
   height: 105px;
   position: absolute;
   top: 70.6%;
@@ -264,7 +267,7 @@ main {
 }
 
 .contact--title-container h3 {
-  margin: 10px 0 0 45px;
+  margin: 5% 0 0 10%;
 }
 
 .contact--links-container {
@@ -303,4 +306,20 @@ main {
   margin-bottom: -4px;
   grid-area: 4 / 1 / 5 / 2;
   border-radius: 0% 21% 0% 0% / 0% 36% 0% 0%;
+}
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+  p, a {
+    font-size: 1.2rem;
+  }
+  .title--name,
+  .title--nickname {
+    font-size: 2.8rem;
+  }
+  .coming--container p {
+    font-size: 3.8rem;
+  }
 }

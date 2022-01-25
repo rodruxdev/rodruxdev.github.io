@@ -91,6 +91,7 @@ main {
 .quotes--litle-container {
   max-width: none;
   width: 100%;
+  height: 100%;
   grid-template-columns: 40.9% 15.2% 43.9%;
   grid-area: 1 / 1 / 3 / 2;
 }
@@ -126,14 +127,14 @@ main {
 }
 
 .contact--links-container {
-  gap: 28px;
+  gap: 15px;
   grid-area: 2 / 2 / 4 / 3;
   border-radius: 34% 0% 0% 0% / 19% 0% 0% 0%;
 }
 
 .contact--button {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -145,10 +146,59 @@ main {
 }
 
 .contact--button-icon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 
 .mobile-decoration {
   display: none;
+}
+
+@media (min-width: 1270px) {
+  p, a {
+    font-size: 2.4rem;
+  }
+  p > span {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  .title--name,
+  .title--nickname {
+    font-size: 6rem;
+    margin-bottom: 3%;
+  }
+  .title--position {
+    margin-left: 12%;
+  }
+  .coming--container{
+    align-items: flex-end;
+    margin-left: 5%;
+  }
+  .quote--inclussion-container {
+    border-radius: 0% 0% 23% 0% / 0% 0% 50% 0%;
+  }
+  .quotes--help-container p {
+    width: 65%;
+    margin-right: 15%;
+  }
+  .contact--title-container {
+    border-radius: 15% 0% 0% 10% / 30% 0% 0% 15%;
+  }
+  .contact--links-container {
+    gap: 30px;
+    border-radius: 30% 0% 0% 0% / 20% 0% 0% 0%;
+  }
+  .contact--button {
+    width: 65px;
+    height: 65px;
+  }
+  .contact--button a {
+    padding-left: 7.5px;
+  }
+  .contact--button-icon {
+    width: 50px;
+    height: 50px;
+  }
 }

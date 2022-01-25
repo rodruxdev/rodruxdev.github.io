@@ -1,6 +1,9 @@
 a, p {
   font-size: 2.1rem;
 }
+p > span {
+  font-size: 1.8rem;
+}
 
 h3 {
   font-size: 2.8rem;
@@ -35,6 +38,7 @@ h3 {
 .title--name,
 .title--nickname {
   font-size: 4.8rem;
+  margin-bottom: 2%;
 }
 
 .title--position-container {
@@ -93,7 +97,7 @@ h3 {
   width: 68%;
   height: 235px;
   grid-template-columns: 39.1% 17.7% 43.2%;
-  grid-template-rows: 85px 68px 82px;
+  grid-template-rows: 36.2% 28.9% 34.9%;
   margin-bottom: 50px;
   align-self: flex-start;
 }
@@ -126,10 +130,6 @@ h3 {
   height: 395px;
   grid-template-columns: 29% auto 55%;
   grid-template-rows: 70px 110px 65px auto;
-}
-
-.contact--title-container{
-  padding-top: 10px;
 }
 
 .contact--links-container {

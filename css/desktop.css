@@ -166,22 +166,31 @@ main {
   display: none;
 }
 
-.contact--links-container:hover {
+.contact--links-container:hover,
+.contact--links-container:focus-within {
   transform: translateX(0);
 }
 
-.contact--links-container:hover .contact--button {
+.contact--links-container:hover .contact--button,
+.contact--links-container:focus-within .contact--button {
   transform: translateX(0);
 }
 
-.contact--button:hover {
+.contact--button:hover,
+.contact--button:focus-within {
   width: 200px;
   transform: translateX(0);
 }
 
-.contact--button:hover a {
+.contact--button:hover a,
+.contact--button a:focus {
   justify-content: center;
   padding-left: 0;
+}
+
+a:focus {
+  border: 3px solid var(--orange);
+  border-radius: 8px;
 }
 
 @media (min-width: 1270px) {
@@ -189,7 +198,7 @@ main {
     font-size: 2.6rem;
   }
   p > span {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   h3 {
     font-size: 3.2rem;
@@ -222,7 +231,8 @@ main {
     width: 65px;
     height: 65px;
   }
-  .contact--button:hover {
+  .contact--button:hover,
+  .contact--button:focus-within {
     width: 270px;
   }
   .contact--button a {

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const StackItem = () => {
+const StackItem = ({ icon, children }) => {
   return (
     <li>
-      <div>Icon</div>
-      <p>GIT</p>
+      <div>{icon}</div>
+      <p>{children}</p>
     </li>
   );
 };

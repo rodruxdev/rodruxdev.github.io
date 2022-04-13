@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ContactButton = () => {
+const ContactButton = ({ icon, children }) => {
   return (
     <div>
       <a aria-label="Rodrux Instagram">
-        <div>icon</div>
-        @rodruxdev
+        <div>{icon}</div>
+        {children}
       </a>
     </div>
   );

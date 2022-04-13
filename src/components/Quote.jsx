@@ -2,7 +2,7 @@ import React from 'react';
 
 const Quote = ({ children }) => {
   return (
-    <div className="quote--inclussion-container blue-box">
+    <div>
       <p>{children}</p>
     </div>
   );

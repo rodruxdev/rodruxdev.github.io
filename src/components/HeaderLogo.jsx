@@ -6,7 +6,7 @@ const HeaderLogo = () => {
     <div>
       <Link href="">
         <a>
-          <p></p>
+          <p>Logo</p>
         </a>
       </Link>
       <p>RODRIGO GOITIA</p>

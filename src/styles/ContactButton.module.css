@@ -1,0 +1,21 @@
+.contact-button {
+  width: 64.5%;
+  height: 14.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  background-color: var(--background);
+  border: none;
+  border-radius: 8px;
+}
+
+.contact-button__user {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.contact-button__icon {
+  width: 25px;
+  height: 25px;
+}

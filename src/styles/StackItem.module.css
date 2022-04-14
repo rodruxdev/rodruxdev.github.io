@@ -1,0 +1,19 @@
+.stack {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.stack__icon {
+  width: 45px;
+  height: 45px;
+  color: var(--white);
+}
+
+.stack__text {
+  text-transform: uppercase;
+}

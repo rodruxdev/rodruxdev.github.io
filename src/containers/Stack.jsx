@@ -12,7 +12,7 @@ const Stack = () => {
         <StackItem icon="css">CSS</StackItem>
         <StackItem icon="js">JAVASCRIPT</StackItem>
         <StackItem icon="react">REACT.JS</StackItem>
-        <StackItem icon="next">NEXT.JS</StackItem>
+        <StackItem icon="python">PYTHON</StackItem>
       </ul>
     </div>
   );

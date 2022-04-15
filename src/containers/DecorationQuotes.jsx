@@ -1,10 +1,11 @@
 import Quote from '@components/Quote';
 import React from 'react';
+import styles from '@styles/DecorationQuotes.module.css';
 
 const DecorationQuotes = () => {
   return (
-    <div>
-      <div>
+    <div className={`${styles.decoration} blue-border`}>
+      <div className={styles['decoration__quotes-container']}>
         <Quote>PASSIONATE ABOUT LEARNING</Quote>
         <div></div>
         <Quote>

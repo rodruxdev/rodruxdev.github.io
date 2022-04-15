@@ -1,12 +1,13 @@
 import SkillsItem from '@components/SkillsItem';
 import Subtitle from '@components/Subtitle';
 import React from 'react';
+import styles from '@styles/Skills.module.css';
 
 const Skills = () => {
   return (
-    <div>
+    <div className={`${styles.skills} orange-border`}>
       <Subtitle>SKILLS</Subtitle>
-      <ul>
+      <ul className={styles.skills__list}>
         <SkillsItem>Develop responsive web pages or web apps with a high level of detail in design and user experience.</SkillsItem>
         <SkillsItem>Use APIs to show and change information in features according the business logic and following storytelling.</SkillsItem>
         <SkillsItem>Optimize performance to reduce load time and better user experience.</SkillsItem>

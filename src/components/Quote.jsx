@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from '@styles/Quote.module.css';
 
-const Quote = ({ children }) => {
-  //TODO: Add dinamic styles in box and border
+const categories = {
+  talentMobile: `${styles.quote} ${styles['quote__talent--mobile']} orange-box`,
+  learningMobile: `${styles.quote} ${styles['quote__learning--mobile']} blue-border`,
+};
+
+const Quote = ({ category, children }) => {
   return (
-    <div className={`${styles.quote} orange-box`}>
+    <div className={categories[category]}>
       <p className={styles.quote__text}>{children}</p>
     </div>
   );

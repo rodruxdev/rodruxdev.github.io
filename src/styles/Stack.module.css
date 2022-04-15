@@ -1,0 +1,32 @@
+.stack {
+  width: 100%;
+  max-width: 410px;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  border-right: none;
+  border-top-left-radius: 5.7% 6.2%;
+  border-bottom-left-radius: 14.3% 15.5%;
+  justify-self: end;
+  display: grid;
+  justify-content: center;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+
+.stack__container {
+  width: 60%;
+}
+
+.stack__list {
+  width: 100%;
+  max-width: 340px;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(2, 80px);
+  gap: 15px;
+}

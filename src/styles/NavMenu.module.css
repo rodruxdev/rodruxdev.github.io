@@ -2,4 +2,7 @@
   width: 200px;
   height: 90px;
   border-bottom-left-radius: 5% 11%;
+  justify-self: end;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
 }

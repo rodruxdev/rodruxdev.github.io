@@ -1,5 +1,5 @@
 .contact-button {
-  width: 64.5%;
+  width: 80%;
   height: 14.2%;
   display: flex;
   justify-content: center;
@@ -7,15 +7,11 @@
   gap: 5%;
   background-color: var(--background);
   border: none;
-  border-radius: 8px;
-}
-
-.contact-button__user {
-  height: 100%;
-  vertical-align: middle;
+  border-radius: 3.4% / 14.3%;
 }
 
 .contact-button__icon {
   width: 25px;
   height: 25px;
+  color: var(--white);
 }

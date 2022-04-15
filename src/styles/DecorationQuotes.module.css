@@ -4,11 +4,18 @@
   border-left: none;
   border-bottom: none;
   grid-area: 4 / 1 / 5 / 2;
-  border-radius: 0% 21% 0% 0% / 0% 36% 0% 0%;
+  border-top-right-radius: 30% 20%;
   grid-column: 1;
   grid-row: 1;
 }
 
 .decoration__quotes-container {
   display: none;
+}
+
+@media (min-width: 600px) {
+  .decoration {
+    height: 180px;
+    border-top-right-radius: 30% 20%;
+  }
 }

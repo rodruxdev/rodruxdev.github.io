@@ -6,11 +6,6 @@
   grid-template-rows: 18.7% 59% 22.3%;
 }
 
-.picture__decoration {
-  width: 100%;
-  height: 100%;
-}
-
 .picture__decoration--orange {
   grid-area: 1 / 3 / 3 / 6;
   border-top-left-radius: 15% 17%;
@@ -30,4 +25,14 @@
   height: 252px;
   grid-area: 2 / 2 / 4 / 5;
   justify-self: center;
+}
+
+@media (min-width: 600px) {
+  .picture {
+    height: 500px;
+  }
+  .picture__image {
+    width: 405px;
+    height: 405px;
+  }
 }

@@ -6,12 +6,12 @@ import styles from '@styles/AboutSection.module.css';
 
 const AboutSection = () => {
   return (
-    <section className={styles.about}>
-      <div className={`${styles.about_title} orange-box`}>
+    <section className={styles['about-section']}>
+      <div className={`${styles['about-section_title']} orange-box`}>
         <Subtitle>ABOUT ME</Subtitle>
       </div>
       <About />
-      <div className={styles.about__quotes}>
+      <div className={styles['about-section__quotes']}>
         <Quote category="talentMobile">
           {`"LET YOUR TALENT CREATE FOR OTHERS"`}
           <br />

@@ -1,6 +1,4 @@
 .skills {
-  width: 100%;
-  height: 100%;
   border-left: none;
   border-top-right-radius: 14.3% 11.6%;
   border-bottom-right-radius: 5.7% 4.6%;
@@ -12,8 +10,6 @@
 }
 
 .skills__list {
-  width: 100%;
-  height: 100%;
   margin-top: 15px;
   padding-left: 25px;
   list-style-type: circle;
@@ -30,5 +26,20 @@
 @media (min-width: 350px) {
   .skills__list {
     gap: 4vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .skills {
+    padding-top: 35px;
+  }
+  .skills__list {
+    margin-top: 20px;
+    padding-left: 30px;
+    gap: 3vw;
+  }
+  .skills__list li::marker {
+    color: var(--white);
+    font-size: 18px;
   }
 }

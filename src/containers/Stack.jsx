@@ -6,7 +6,7 @@ import styles from '@styles/Stack.module.css';
 const Stack = () => {
   return (
     <div className={`${styles.stack} blue-border`}>
-      <div className={styles.stack__grid}>
+      <div>
         <Subtitle>STACK</Subtitle>
         <ul className={styles.stack__list}>
           <StackItem icon="git">GIT</StackItem>

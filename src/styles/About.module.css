@@ -30,3 +30,12 @@
   border-bottom-left-radius: 16% 31%;
   border-right: none;
 }
+
+@media (min-width: 600px) {
+  .about {
+    height: 285px;
+  }
+  .about__text {
+    line-height: 2.8rem;
+  }
+}

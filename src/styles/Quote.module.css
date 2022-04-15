@@ -1,6 +1,4 @@
 .quote{
-  width: 100%;
-  height: 100%;
   display: grid;
   place-items: center;
 }
@@ -36,4 +34,18 @@
   width: 140px;
   text-align: end;
   margin-top: 10px;
+}
+
+@media (min-width: 600px){
+  .quote__text,
+  .quote__text span{
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+  .quote__talent--mobile .quote__text{
+    width: 250px;
+  }
+  .quote__learning--mobile .quote__text{
+    width: 180px;
+  }
 }

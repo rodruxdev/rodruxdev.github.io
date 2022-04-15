@@ -1,7 +1,6 @@
 .stack {
   width: 100%;
   max-width: 410px;
-  height: 100%;
   padding-top: 60px;
   padding-bottom: 50px;
   padding-left: 7%;
@@ -15,10 +14,6 @@
   grid-row: 2 / 4;
 }
 
-.stack__container {
-  width: 60%;
-}
-
 .stack__list {
   width: 100%;
   max-width: 340px;
@@ -29,4 +24,15 @@
   grid-template-columns: repeat(3, 80px);
   grid-template-rows: repeat(2, 80px);
   gap: 15px;
+}
+
+@media (min-width: 600px) {
+  .stack {
+    max-width: 450px;
+  }
+  .stack__list {
+    width: 100%;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+  }
 }

@@ -17,3 +17,18 @@
 .stack__text {
   text-transform: uppercase;
 }
+
+@media (min-width: 600px) {
+  .stack {
+    width: 100px;
+    height: 100px;
+    gap: 15px;
+  }
+  .stack__icon {
+    width: 56px;
+    height: 56px;
+  }
+  .stack__text {
+    font-size: 1.8rem;
+  }
+}

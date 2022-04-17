@@ -126,14 +126,14 @@ a:focus {
 
 @media (min-width: 1700px) {
   a, p {
-    font-size: 3.8rem;
-    line-height: 4.4rem;
+    font-size: 3.4rem;
+    line-height: 4rem;
   }
   p > span {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
   h3 {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
   .blue-border {
     border: 8px solid var(--blue);

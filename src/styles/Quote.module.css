@@ -15,8 +15,8 @@
 }
 
 .quote__talent {
-  max-width: 690px;
-  max-height: 300px;
+  max-width: 552px;
+  max-height: 240px;
   grid-column: 1 / 3 ;
   grid-row: 1 / 3;
   z-index: 1;
@@ -90,8 +90,8 @@
 @media (min-width: 1700px) {
   .quote__text,
   .quote__text span{
-    font-size: 3.4rem;
-    line-height: 5.7rem;
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
   .quote__talent {
     border: 8px solid var(--blue);

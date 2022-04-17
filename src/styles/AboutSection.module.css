@@ -74,7 +74,7 @@
 
 @media (min-width: 1700px) {
   .about-section {
-    height: 850px;
+    height: 700px;
     grid-template-rows: 18.4% 12.3% 11.5% 41.4% 16.4%;
   }
 }

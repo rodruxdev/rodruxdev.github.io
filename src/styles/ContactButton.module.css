@@ -107,8 +107,8 @@
 
 @media (min-width: 1700px) {
   .contact-button__icon {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
   }
   .contact-button:before{
     border-bottom: 150px solid var(--background);

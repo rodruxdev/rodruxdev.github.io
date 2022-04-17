@@ -15,7 +15,7 @@
 
 @media (min-width: 1700px) {
   .footer {
-    height: 900px;
+    height: 650px;
     grid-template-columns: 62% 38%;
   }
 }

@@ -5,6 +5,12 @@
       "@pages/*": [
         "pages/*"
       ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@containers/*": [
+        "containers/*"
+      ],
       "@styles/*": [
         "styles/*"
       ]

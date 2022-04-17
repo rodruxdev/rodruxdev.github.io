@@ -1,5 +1,6 @@
 import ContactButton from '@components/ContactButton';
 import Subtitle from '@components/Subtitle';
+import Link from 'next/link';
 import React from 'react';
 import styles from '@styles/Contact.module.css';
 
@@ -10,11 +11,20 @@ const Contact = () => {
         <Subtitle>CONTACT ME</Subtitle>
       </div>
       <div className={`${styles.contact__links} blue-box`}>
-        {/* TODO: Add Link to each button */}
-        <ContactButton icon="linkedin">Rodrigo Goitia</ContactButton>
-        <ContactButton icon="github">@rodruxdev</ContactButton>
-        <ContactButton icon="twitter">@rodruxdev</ContactButton>
-        <ContactButton icon="instagram">@rodruxdev</ContactButton>
+        <Link href="https://www.linkedin.com/in/rodrigo-goitia/" passHref>
+          <ContactButton social="linkedin">Rodrigo Goitia</ContactButton>
+        </Link>
+        <Link href="https://github.com/rodruxdev" passHref>
+          <ContactButton ContactButton Button social="github">
+            @rodruxdev
+          </ContactButton>
+        </Link>
+        <Link href="https://twitter.com/rodruxdev" passHref>
+          <ContactButton social="twitter">@rodruxdev</ContactButton>
+        </Link>
+        <Link href="https://www.instagram.com/rodruxdev" passHref>
+          <ContactButton social="instagram">@rodruxdev</ContactButton>
+        </Link>
       </div>
     </div>
   );

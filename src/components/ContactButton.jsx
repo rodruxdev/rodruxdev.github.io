@@ -9,15 +9,13 @@ const icons = {
   instagram: <FaInstagramSquare className={styles['contact-button__icon']} />,
 };
 
-const ContactButton = ({ icon, children }) => {
+const ContactButton = React.forwardRef(function Button({ href, onClick, social, children }, ref) {
   return (
-    <div className={styles['contact-button']}>
-      {icons[icon]}
-      <a className={styles['contact-button__user']} aria-label="Rodrux Instagram">
-        {children}
-      </a>
-    </div>
+    <a href={href} aria-label={`Rodrux ${social}`} target="blank" ref={ref} className={styles['contact-button']} onClick={onClick}>
+      {icons[social]}
+      <p className={styles['contact-button__user']}>{children}</p>
+    </a>
   );
-};
+});
 
 export default ContactButton;

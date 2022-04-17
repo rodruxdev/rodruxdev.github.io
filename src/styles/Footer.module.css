@@ -5,3 +5,11 @@
   grid-template-columns: 20% 80%;
   align-items: flex-end;
 }
+
+
+@media (min-width: 1000px) {
+  .footer {
+    height: 430px;
+    grid-template-columns: 62% 38%;
+  }
+}

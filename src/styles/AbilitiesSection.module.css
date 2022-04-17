@@ -13,3 +13,11 @@
     height: 830px;
   }
 }
+
+@media (min-width: 1000px) {
+  .abilities {
+    height: 610px;
+    grid-template-columns: 49.2% 5% 45.8%;
+    grid-template-rows: 23% 71.3% 5.7%;
+  }
+}

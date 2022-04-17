@@ -38,3 +38,12 @@
     padding-top: 20px;
   }
 }
+
+@media (min-width: 1000px) {
+  .contact {
+    height: 100%;
+  }
+  .contact__title {
+    padding-top: 30px;
+  }
+}

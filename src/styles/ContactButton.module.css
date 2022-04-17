@@ -26,3 +26,17 @@
     height: 35px;
   }
 }
+
+@media (min-width: 1000px) {
+  .contact-button {
+    background-color: var(--white);
+  }
+  .contact-button a{
+    color: var(--black);
+  }
+  .contact-button__icon {
+    width: 40px;
+    height: 40px;
+    color: var(--black);
+  }
+}

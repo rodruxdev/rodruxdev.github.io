@@ -105,3 +105,22 @@ p > span {
     border: 5px solid var(--orange);
   }
 }
+
+@media (min-width: 1000px) {
+  a, p {
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+  }
+  p > span {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  .blue-border {
+    border: 5px solid var(--blue);
+  }
+  .orange-border {
+    border: 5px solid var(--orange);
+  }
+}

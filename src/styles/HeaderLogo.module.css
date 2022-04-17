@@ -29,3 +29,14 @@
     height: 80px;
   }
 }
+
+@media (min-width: 1000px) {
+  .header-logo {
+    width: 400px;
+    height: 90px;
+  }
+  .header-logo__logo {
+    width: 70px;
+    height: 70px;
+  }
+}

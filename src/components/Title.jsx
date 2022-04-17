@@ -4,8 +4,8 @@ import styles from '@styles/Title.module.css';
 const Title = () => {
   return (
     <div className={styles.title}>
-      <div className={`${styles.title__container} ${styles['title__decoration-blue']} blue-border`}></div>
-      <div className={`${styles.title__container} ${styles['title__decoration-orange']} orange-border`}></div>
+      <div className={`${styles.title__container} ${styles['title__decoration-blue']} orange-border`}></div>
+      <div className={`${styles.title__container} ${styles['title__decoration-orange']} blue-border`}></div>
       <div className={`${styles.title__container} ${styles['title__name-container']}`}>
         <h1 className={styles.title__name}>RODRIGO GOITIA</h1>
       </div>

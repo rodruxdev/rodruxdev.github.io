@@ -43,3 +43,13 @@
     font-size: 18px;
   }
 }
+
+@media (min-width: 1000px) {
+  .skills {
+    padding-right: 60px;
+    padding-bottom: 30px;
+  }
+  .skills__list {
+    gap: 35px;
+  }
+}

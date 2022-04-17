@@ -36,3 +36,22 @@
     grid-template-rows: repeat(2, 100px);
   }
 }
+
+@media (min-width: 600px) {
+  .stack {
+    max-width: 100%;
+    border-bottom-left-radius: 5.7% 6.2%;
+    border-top-left-radius: 14.3% 15.5%;
+  }
+  .stack__list {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(2, 120px);
+  }
+  .stack__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

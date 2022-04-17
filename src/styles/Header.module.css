@@ -4,3 +4,11 @@
   grid-template-columns: 46.7% 6.6% 46.7%;
   align-items: start;
 }
+
+@media (min-width: 1000px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

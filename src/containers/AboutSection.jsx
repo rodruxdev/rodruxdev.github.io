@@ -17,7 +17,7 @@ const AboutSection = () => {
           <br />
           <span>- Rodrigo Goitia</span>
         </Quote>
-        <Quote category="learningMobile">PASSIONATE ABOUT LEARNING</Quote>
+        {/* <Quote category="learningMobile">PASSIONATE ABOUT LEARNING</Quote> */}
       </div>
     </section>
   );

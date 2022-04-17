@@ -6,3 +6,13 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+@media (min-width: 1000px) {
+  .hero {
+    height: 40vw;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 39% 8% 3% 22% 28%;
+    grid-template-rows: 52% 20% 23% 5%;
+  }
+}

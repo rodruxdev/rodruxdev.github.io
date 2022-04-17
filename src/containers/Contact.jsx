@@ -6,10 +6,10 @@ import styles from '@styles/Contact.module.css';
 const Contact = () => {
   return (
     <div className={styles.contact}>
-      <div className={`${styles.contact__title} blue-box`}>
+      <div className={`${styles.contact__title} orange-box`}>
         <Subtitle>CONTACT ME</Subtitle>
       </div>
-      <div className={`${styles.contact__links} orange-box`}>
+      <div className={`${styles.contact__links} blue-box`}>
         {/* TODO: Add Link to each button */}
         <ContactButton icon="linkedin">Rodrigo Goitia</ContactButton>
         <ContactButton icon="github">@rodruxdev</ContactButton>

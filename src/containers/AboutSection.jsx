@@ -1,6 +1,7 @@
 import About from '@components/About';
 import Quote from '@components/Quote';
 import Subtitle from '@components/Subtitle';
+import MediaQuery from 'react-responsive';
 import React from 'react';
 import styles from '@styles/AboutSection.module.css';
 
@@ -17,7 +18,9 @@ const AboutSection = () => {
           <br />
           <span>- Rodrigo Goitia</span>
         </Quote>
-        {/* <Quote category="learningMobile">PASSIONATE ABOUT LEARNING</Quote> */}
+        <MediaQuery maxWidth={999}>
+          <Quote category="learningMobile">PASSIONATE ABOUT LEARNING</Quote>
+        </MediaQuery>
       </div>
     </section>
   );

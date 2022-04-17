@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '@styles/Quote.module.css';
 
 const categories = {
-  talentMobile: `${styles.quote} ${styles['quote__talent']} blue-border`,
+  talentMobile: `${styles.quote} ${styles['quote__talent']} orange-box`,
   learningMobile: `${styles.quote} ${styles['quote__learning--mobile']} blue-border`,
   learningDesktop: `${styles.quote} ${styles['quote__learning--desktop']} blue-box`,
   inclusionDesktop: `${styles.quote} ${styles['quote__inclusion']} orange-box`,

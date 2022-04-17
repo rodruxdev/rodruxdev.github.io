@@ -60,6 +60,13 @@
     border-top-left-radius: 16% 33%;
     border-bottom-left-radius: 8% 17%;
     border-right-width: 0;
+    border: 5px solid var(--blue);
+    border-right: none;
+    background-color: transparent;
+    color: var(--white);
+    box-shadow:
+      0px 0px 20px -4.5px rgba(12, 69, 173, 0.6),
+      inset 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6);
   }
   .quote__talent .quote__text{
     text-align: end;
@@ -87,9 +94,11 @@
     line-height: 5.7rem;
   }
   .quote__talent {
+    border: 8px solid var(--blue);
+    border-right: none;
     justify-self: end;
   }
   .quote__text {
-    width: 60%;
+    width: 70%;
   }
 }

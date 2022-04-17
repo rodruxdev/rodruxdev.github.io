@@ -130,4 +130,10 @@ p > span {
   h3 {
     font-size: 4.4rem;
   }
+  .blue-border {
+    border: 8px solid var(--blue);
+  }
+  .orange-border {
+    border: 8px solid var(--orange);
+  }
 }

@@ -10,6 +10,10 @@
   vertical-align: middle;
 }
 
+.quote__text {
+  width: 80%;
+}
+
 .quote__talent {
   max-width: 690px;
   max-height: 300px;
@@ -20,10 +24,6 @@
   border-bottom-right-radius: 8% 17%;
 }
 
-/* .quote__talent .quote__text{
-  width: 180px;
-} */
-
 .quote__learning--mobile {
   border-right: none;
   grid-column: 2 / 4 ;
@@ -33,9 +33,13 @@
 }
 
 .quote__learning--mobile .quote__text{
-  /* width: 140px; */
   text-align: end;
   margin-top: 10px;
+}
+
+.quote__learning--desktop,
+.quote__inclusion {
+  display: none;
 }
 
 @media (min-width: 600px) {
@@ -43,9 +47,6 @@
   .quote__text span{
     font-size: 2.1rem;
     line-height: 2.6rem;
-  }
-  .quote__text {
-    width: 80%;
   }
 }
 

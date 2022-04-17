@@ -45,8 +45,8 @@
     grid-template-columns: 7.3% 11.8% 48.1% 13.2% 19.6%;
   }
   .picture__image {
-    width: 325px;
-    height: 325px;
+    width: 32.5vw;
+    height: 32.5vw;
   }
   .picture__decoration--orange {
     border-top-right-radius: 15% 17%;
@@ -57,19 +57,8 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .picture__image {
-    width: 390px;
-    height: 390px;
-  }
-}
-
 @media (min-width: 1700px) {
   .picture {
     max-width: 1100px;
-  }
-  .picture__image {
-    width: 835px;
-    height: 835px;
   }
 }

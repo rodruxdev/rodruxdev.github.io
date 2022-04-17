@@ -9,9 +9,10 @@
   grid-row: 1;
 }
 
-/* .decoration div {
+.decoration__orange,
+.decoration__blue {
   display: none;
-} */
+}
 
 @media (min-width: 600px) {
   .decoration {

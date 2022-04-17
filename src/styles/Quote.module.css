@@ -11,6 +11,8 @@
 }
 
 .quote__talent {
+  max-width: 690px;
+  max-height: 300px;
   grid-column: 1 / 3 ;
   grid-row: 1 / 3;
   z-index: 1;
@@ -18,9 +20,9 @@
   border-bottom-right-radius: 8% 17%;
 }
 
-.quote__talent .quote__text{
+/* .quote__talent .quote__text{
   width: 180px;
-}
+} */
 
 .quote__learning--mobile {
   border-right: none;
@@ -31,7 +33,7 @@
 }
 
 .quote__learning--mobile .quote__text{
-  width: 140px;
+  /* width: 140px; */
   text-align: end;
   margin-top: 10px;
 }
@@ -42,11 +44,8 @@
     font-size: 2.1rem;
     line-height: 2.6rem;
   }
-  .quote__talent .quote__text{
-    width: 250px;
-  }
-  .quote__learning--mobile .quote__text{
-    width: 180px;
+  .quote__text {
+    width: 80%;
   }
 }
 
@@ -78,7 +77,18 @@
     border-top-left-radius: 7% 16%;
     border-top-right-radius: 14% 32%;
   }
+}
+
+@media (min-width: 1700px) {
+  .quote__text,
+  .quote__text span{
+    font-size: 3.4rem;
+    line-height: 5.7rem;
+  }
+  .quote__talent {
+    justify-self: end;
+  }
   .quote__text {
-    width: 80%;
+    width: 60%;
   }
 }

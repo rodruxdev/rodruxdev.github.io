@@ -64,3 +64,17 @@
     grid-template-rows: 100%;
   }
 }
+
+@media (min-width: 1200px) {
+  .about-section {
+    height: 520px;
+    grid-template-rows: 18.4% 12.3% 11.5% 41.4% 16.4%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .about-section {
+    height: 850px;
+    grid-template-rows: 18.4% 12.3% 11.5% 41.4% 16.4%;
+  }
+}

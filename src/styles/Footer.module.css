@@ -6,10 +6,16 @@
   align-items: flex-end;
 }
 
-
 @media (min-width: 1000px) {
   .footer {
     height: 430px;
+    grid-template-columns: 62% 38%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .footer {
+    height: 900px;
     grid-template-columns: 62% 38%;
   }
 }

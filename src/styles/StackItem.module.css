@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .stack {
     width: 120px;
     height: 120px;
@@ -44,5 +44,19 @@
   }
   .stack__text {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .stack {
+    width: 200px;
+    height: 200px;
+  }
+  .stack__icon {
+    width: 100px;
+    height: 100px;
+  }
+  .stack__text {
+    font-size: 4rem;
   }
 }

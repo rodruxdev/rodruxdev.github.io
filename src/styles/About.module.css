@@ -9,6 +9,8 @@
 .about__text-container {
   width: 100%;
   height: 100%;
+  max-width: 1212px;
+  max-height: 320px;
   display: grid;
   place-items: center;
   grid-area: 1 / 2 / 3 / 4;
@@ -26,6 +28,8 @@
 .about__decoration {
   width: 100%;
   height: 100%;
+  max-width: 909px;
+  max-height: 240px;
   grid-area: 2 / 3 / 4 / 5;
   border-bottom-left-radius: 16% 31%;
   border-right-width: 0;
@@ -57,5 +61,16 @@
     border-bottom-right-radius: 7.2% 23.5%;
     border-bottom-left-radius: 17% 47%;
     border-right-width: 5px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .about__text-container {
+    place-self: center;
+  }
+  .about__text {
+    width: 85%;
+    font-size: 3.8rem;
+    line-height: 5.7rem;
   }
 }

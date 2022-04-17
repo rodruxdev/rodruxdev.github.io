@@ -117,10 +117,17 @@ p > span {
   h3 {
     font-size: 2.4rem;
   }
-  .blue-border {
-    border: 5px solid var(--blue);
+}
+
+@media (min-width: 1700px) {
+  a, p {
+    font-size: 3.8rem;
+    line-height: 4.4rem;
   }
-  .orange-border {
-    border: 5px solid var(--orange);
+  p > span {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 4.4rem;
   }
 }

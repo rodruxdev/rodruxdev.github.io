@@ -20,3 +20,16 @@
     height: 90px;
   }
 }
+
+@media (min-width: 1200px) {
+  .nav {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .nav {
+    width: 500px;
+    height: 120px;
+  }
+}

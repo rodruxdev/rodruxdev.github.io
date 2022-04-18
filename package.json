@@ -1,0 +1,27 @@
+{
+  "name": "rodruxdev.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "next": "12.1.4",
+    "prettier": "^2.6.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-responsive": "^9.0.0-beta.6"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "^12.1.4"
+  }
+}

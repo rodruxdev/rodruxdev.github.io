@@ -1,0 +1,35 @@
+.nav{
+  width: 200px;
+  height: 90px;
+  border-bottom-left-radius: 5% 11%;
+  justify-self: end;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+@media (min-width: 600px) {
+  .nav{
+    width: 260px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    width: 410px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .nav {
+    width: 580px;
+    height: 100px;
+  }
+}

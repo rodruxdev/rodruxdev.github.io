@@ -1,0 +1,119 @@
+.contact-button {
+  width: 80%;
+  height: 14.2%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  background-color: var(--background);
+  border: none;
+  border-radius: 3.4% / 14.3%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contact-button__icon {
+  width: 25px;
+  height: 25px;
+  color: var(--white);
+}
+
+.contact-button:before,
+.contact-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.contact-button:before {
+  right: -50px;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid var(--white);
+  transform: translateX(-100%);
+}
+
+.contact-button:after {
+  left: -50px;
+  border-left: 50px solid transparent;
+  border-top: 50px solid var(--white);
+  transform: translateX(100%);
+}
+
+.contact-button:hover,
+.contact-button:focus{
+  z-index: 1;
+}
+
+.contact-button:hover p,
+.contact-button:focus p,
+.contact-button:hover .contact-button__icon,
+.contact-button:focus .contact-button__icon{
+  color: var(--black);
+  z-index: 1;
+}
+
+.contact-button:hover:before,
+.contact-button:focus:before {
+  transform: translateX(-49%);
+}
+
+.contact-button:hover:after,
+.contact-button:focus:after {
+  transform: translateX(49%);
+}
+
+@media (min-width: 600px) {
+  .contact-button {
+    width: 65%;
+    height: 15%;
+  }
+  .contact-button__icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-button {
+    background-color: var(--white);
+  }
+  .contact-button p{
+    color: var(--black);
+  }
+  .contact-button__icon {
+    width: 40px;
+    height: 40px;
+    color: var(--black);
+  }
+  .contact-button:before{
+    border-bottom: 80px solid var(--background);
+  }
+  .contact-button:after {
+    border-top: 80px solid var(--background);
+  }
+  .contact-button:hover p,
+  .contact-button:focus p,
+  .contact-button:hover .contact-button__icon,
+  .contact-button:focus .contact-button__icon{
+    color: var(--white);
+  }
+}
+
+@media (min-width: 1700px) {
+  .contact-button__icon {
+    width: 65px;
+    height: 65px;
+  }
+  .contact-button:before{
+    border-bottom: 150px solid var(--background);
+  }
+  .contact-button:after {
+    border-top: 150px solid var(--background);
+  }
+}

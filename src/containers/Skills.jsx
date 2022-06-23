@@ -1,6 +1,7 @@
 import SkillsItem from '@components/SkillsItem';
 import Subtitle from '@components/Subtitle';
 import React from 'react';
+import SkillsSelector from '@components/SkillsSelector';
 import styles from '@styles/Skills.module.css';
 
 const initialClasses = ['', `${styles.skills__next}`, `${styles.skills__previous}`];
@@ -17,7 +18,7 @@ const Skills = () => {
       const newSubtitle = index < subtitles.length - 1 ? subtitles[index + 1] : subtitles[0];
       setSubtitle(newSubtitle);
       setClasses(newClasses);
-    }, 25000);
+    }, 4000);
   };
 
   React.useEffect(() => {
@@ -51,6 +52,7 @@ const Skills = () => {
           <SkillsItem>{`Look after those who you love and care about, people and experience are what life's about.`}</SkillsItem>
         </ul>
       </div>
+      <SkillsSelector />
     </div>
   );
 };

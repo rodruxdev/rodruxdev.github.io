@@ -12,7 +12,7 @@
 
 .skills__list-container {
   width: 100%;
-  height: 100%;
+  height: calc(-0.2 * 100vw + 408px);
   position: relative;
   overflow: hidden;
 }
@@ -62,6 +62,9 @@
   .skills {
     padding-top: 35px;
   }
+  .skills__list-container {
+    height: calc(-0.075 * 100vw + 445px);
+  }
   .skills__list {
     margin-top: 20px;
     padding-left: 30px;
@@ -74,21 +77,30 @@
 
 @media (min-width: 1000px) {
   .skills {
-    padding-right: 60px;
+    padding-right: 70px;
     padding-bottom: 30px;
   }
+  .skills__list-container {
+    height: calc(-0.16 * 100vw + 587px);
+  }
   .skills__list {
-    gap: 35px;
+    gap: 18px;
   }
 }
 
 @media (min-width: 1700px) {
   .skills {
     padding-top: 70px;
-    padding-right: 150px;
+    padding-right: 100px;
+  }
+  .skills__list-container {
+    height: 680px;
+    height: calc(-0.1 * 100vw + 864px);
+    min-height: 680px;
   }
   .skills__list {
     margin-top: 50px;
+    padding-left: 50px;
   }
   .skills__list li::marker {
     color: var(--white);

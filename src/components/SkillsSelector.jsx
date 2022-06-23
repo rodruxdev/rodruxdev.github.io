@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '@styles/SkillsSelector.module.css';
 
-const SkillsSelector = () => {
+const SkillsSelector = ({ handleChange }) => {
   return (
-    <div className={styles['skills-selector']}>
+    <div className={styles['skills-selector']} onChange={handleChange}>
       <label htmlFor="list-1" className={styles['skills-selector__label']}>
         <input className={styles['skills-selector__input']} id="list-1" type="radio" name="skills" value="0" defaultChecked />
       </label>

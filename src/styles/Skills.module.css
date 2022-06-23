@@ -35,7 +35,7 @@
 }
 
 .skills__previous {
-  opacity: 1;
+  opacity: 0;
   transform: translateX(-120%);
   transition: 1s ease-in-out;
 }
@@ -43,7 +43,7 @@
 .skills__next {
   opacity: 0;
   transform: translateX(120%);
-  transition: 0s;
+  transition: 1s ease-in-out;
 }
 
 

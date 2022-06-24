@@ -12,8 +12,10 @@ const icons = {
 const ContactButton = React.forwardRef(function Button({ href, onClick, social, children }, ref) {
   return (
     <a href={href} aria-label={`Rodrux ${social}`} target="blank" ref={ref} className={styles['contact-button']} onClick={onClick}>
-      {icons[social]}
-      <p className={styles['contact-button__user']}>{children}</p>
+      <div className={styles['contact-button__container']}>
+        {icons[social]}
+        <p className={styles['contact-button__user']}>{children}</p>
+      </div>
     </a>
   );
 });

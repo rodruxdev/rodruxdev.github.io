@@ -1,28 +1,38 @@
 import SkillsItem from '@components/SkillsItem';
 import Subtitle from '@components/Subtitle';
 import React from 'react';
+import SkillsSelector from '@components/SkillsSelector';
 import styles from '@styles/Skills.module.css';
 
 const initialClasses = ['', `${styles.skills__next}`, `${styles.skills__previous}`];
 const subtitles = ['MY SKILLS', 'MY SOFT SKILLS', 'MY PRINCIPLES'];
 
 const Skills = () => {
+  const [index, setIndex] = React.useState(0);
   const [classes, setClasses] = React.useState(initialClasses);
   const [subtitle, setSubtitle] = React.useState(subtitles[0]);
 
-  const changeList = () => {
-    setTimeout(() => {
-      const newClasses = [classes[2], classes[0], classes[1]];
-      const index = subtitles.findIndex((item) => item === subtitle);
-      const newSubtitle = index < subtitles.length - 1 ? subtitles[index + 1] : subtitles[0];
-      setSubtitle(newSubtitle);
-      setClasses(newClasses);
-    }, 25000);
+  const handleChangeSkills = (event) => {
+    const { value } = event.target;
+    setIndex(parseInt(value));
+  };
+
+  const changeList = (index) => {
+    setSubtitle(subtitles[index]);
+    let newClasses;
+    if (index === 0) {
+      newClasses = [initialClasses[0], initialClasses[1], initialClasses[1]];
+    } else if (index === 1) {
+      newClasses = [initialClasses[2], initialClasses[0], initialClasses[1]];
+    } else {
+      newClasses = [initialClasses[2], initialClasses[2], initialClasses[0]];
+    }
+    setClasses(newClasses);
   };
 
   React.useEffect(() => {
-    changeList();
-  }, [classes]);
+    changeList(index);
+  }, [index]);
 
   return (
     <div className={`${styles.skills} orange-border`}>
@@ -51,6 +61,7 @@ const Skills = () => {
           <SkillsItem>{`Look after those who you love and care about, people and experience are what life's about.`}</SkillsItem>
         </ul>
       </div>
+      <SkillsSelector handleChange={handleChangeSkills} />
     </div>
   );
 };

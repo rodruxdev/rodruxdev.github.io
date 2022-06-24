@@ -23,7 +23,7 @@ export default function Home() {
           content='I am a Frontend Developer looking to work in startups to beat climate change and reduce all types of inequalities. I develop web apps with attention to the users and the problem. I develop with curiosity, innovation and empathy to come out with simple and effective solutions."'
         />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:image" itemProp="image" content={logo.src} />
+        <meta property="og:image" itemProp="image" content={`https://www.rodrux.com/${logo.src}`} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
@@ -34,7 +34,7 @@ export default function Home() {
           name="twitter:description"
           content="I am a Frontend Developer looking to work in startups to beat climate change and reduce all types of inequalities. I develop web apps with attention to the users and the problem. I develop with curiosity, innovation and empathy to come out with simple and effective solutions."
         />
-        <meta name="twitter:image" content={logo.src} />
+        <meta name="twitter:image" content={`https://www.rodrux.com/${logo.src}`} />
         <meta name="twitter:image:alt" content="Rodrigo Goitia | RODRUX Logo" />
       </Head>
       <Header />

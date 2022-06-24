@@ -9,7 +9,7 @@ const HeaderLogo = () => {
     <div className={`${styles['header-logo']} blue-box`}>
       <Link href="/">
         <a className={styles['header-logo__logo']}>
-          <Image src={logo} alt="Logo de Rodrux, Rodrigo Goitia" width={50} height={50} layout="responsive" sizes="(min-width: 950px) 150px, 50px" />
+          <Image src={logo} alt="Logo de Rodrux, Rodrigo Goitia" width={50} height={50} layout="responsive" sizes="(min-width: 950px) 150px, 50px" priority />
         </a>
       </Link>
       <p className={styles['header-logo__name']}>RODRIGO GOITIA</p>

@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '@styles/ProjectTag.module.css';
 
 const ProjectTag = ({ children }) => {
   return (
-    <li>
-      <p>{children}</p>
+    <li className={`${styles.tag} white-box`}>
+      <p className={styles.tag__text}>{children}</p>
     </li>
   );
 };

@@ -5,6 +5,7 @@ import Header from '@containers/Header';
 import Hero from '@containers/Hero';
 import logo from '../../public/logo.png';
 import Head from 'next/head';
+import Projects from '@containers/Projects';
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutSection />
+      <Projects />
       <AbilitiesSection />
       <Footer />
     </>

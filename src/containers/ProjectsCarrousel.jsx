@@ -1,9 +1,10 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import styles from '@styles/ProjectsCarrousel.module.css';
 
 const ProjectsCarrousel = () => {
   return (
-    <div>
+    <div className={styles.carrousel}>
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />

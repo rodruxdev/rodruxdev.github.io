@@ -13,3 +13,7 @@
   height: 35px;
   color: var(--white);
 }
+
+button:nth-child(2) > .arrow-button__icon {
+  transform: rotate(180deg);
+}

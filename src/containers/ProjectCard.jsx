@@ -17,7 +17,9 @@ const ProjectCard = () => {
       <ul className={styles['project-card__tags-container']}>
         <ProjectTag>React.js</ProjectTag>
       </ul>
-      <Image src={require('../../public/cesar-cipher-game.png')} alt="Image of the project" width={450} height={338} objectFit="contain" />
+      <div className={styles['project-card__image-container']}>
+        <Image src={require('../../public/cesar-cipher-game.png')} alt="Image of the project" width={450} height={338} objectFit="contain" />
+      </div>
       <ActionButton>MORE INFO</ActionButton>
     </div>
   );

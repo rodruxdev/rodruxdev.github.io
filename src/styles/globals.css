@@ -17,7 +17,7 @@ body {
 body {
   background-color: var(--background);
   color: var(--white);
-  text-shadow: 0px 0px 3px rgba(233,230,233,0.4);
+  /* text-shadow: 0px 0px 3px rgba(233,230,233,0.4); */
 }
 
 * {
@@ -29,7 +29,7 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: var(--white);
-  text-shadow: 0px 0px 3px rgba(233,230,233,0.4);
+  /* text-shadow: 0px 0px 3px rgba(233,230,233,0.4); */
 }
 
 p, button {
@@ -49,10 +49,6 @@ h3, h4 {
   line-height: 2.3rem;
   text-transform: uppercase;
   font-weight: 500;
-}
-
-h4 {
-  font-weight: 600;
 }
 
 p > span {

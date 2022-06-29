@@ -6,3 +6,10 @@
   place-items: center;
   cursor: pointer;
 }
+
+@media (min-width: 600px) {
+  .action-button {
+    padding: 20px 60px;
+    border-radius: 16px;
+  }
+}

@@ -17,4 +17,15 @@
     padding: 10px;
     border-radius: 8px;
   }
+  .tag__text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tag__text {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
 }

@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
         gtag('js', new Date());
         gtag('config', 'G-68HDCXW2CC');`}
       </Script>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

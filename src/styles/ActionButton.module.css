@@ -13,3 +13,10 @@
     border-radius: 16px;
   }
 }
+
+@media (min-width: 1200px) {
+  .action-button {
+    padding: 20px 150px;
+    border-radius: 16px;
+  }
+}

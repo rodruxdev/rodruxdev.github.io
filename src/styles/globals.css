@@ -17,7 +17,6 @@ body {
 body {
   background-color: var(--background);
   color: var(--white);
-  /* text-shadow: 0px 0px 3px rgba(233,230,233,0.4); */
 }
 
 * {
@@ -29,7 +28,6 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: var(--white);
-  /* text-shadow: 0px 0px 3px rgba(233,230,233,0.4); */
 }
 
 p, button {
@@ -63,19 +61,16 @@ button {
 
 .blue-box {
   background-color: var(--blue);
-  /* box-shadow: 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6); */
   color: var(--white);
 }
 
 .orange-box {
   background-color: var(--orange);
-  /* box-shadow: 0px 0px 25px -6px rgba(255, 112, 46, 0.6); */
   color: var(--black);
 }
 
 .white-box {
   background-color: var(--white);
-  /* box-shadow: 0px 0px 25px -6px rgba(233, 230, 233, 0.6); */
   color: var(--black);
 }
 
@@ -83,18 +78,12 @@ button {
   border: 3px solid var(--blue);
   background-color: transparent;
   color: var(--white);
-  /* box-shadow:
-    0px 0px 20px -4.5px rgba(12, 69, 173, 0.6),
-    inset 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6); */
 }
 
 .orange-border {
   border: 3px solid var(--orange);
   background-color: transparent;
   color: var(--white);
-  /* box-shadow:
-    0px 0px 25px -6px rgba(255, 112, 46, 0.6),
-    inset 0px 0px 20px -6px rgba(255, 112, 46, 0.6); */
 }
 
 a:focus {

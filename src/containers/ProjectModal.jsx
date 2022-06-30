@@ -22,7 +22,7 @@ const ProjectModal = () => {
         <ProjectTag>React.js</ProjectTag>
       </ul>
       <div className={styles['project-modal__image-container']}>
-        <Image src={require('../../public/cesar-cipher-game.png')} alt="Image of the project" width={780} height={585} objectFit="contain" />
+        <Image src={require('../../public/cesar-cipher-game.png')} alt="Image of the project" width={800} height={450} objectFit="contain" />
       </div>
       <div className={styles['project-modal__buttons-container']}>
         <LinkButton>SEE PROJECT</LinkButton>

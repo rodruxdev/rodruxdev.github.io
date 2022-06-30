@@ -1,7 +1,7 @@
 .carrousel {
   width: 100%;
-  height: calc((0.65 * 100vw) + 215px);
-  max-height: 760px;
+  height: calc((0.4 * 100vw) + 264px);
+  min-height: 390px;
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
@@ -9,14 +9,20 @@
 
 @media (min-width: 600px) {
   .carrousel {
-    height: calc((0.45 * 100vw) + 400px);
+    height: calc((0.14 * 100vw) + 530px);
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px)  {
+  .carrousel {
+    max-height: 700px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 1700px)  {
   .carrousel {
-    max-height: 790px;
-    margin-bottom: 20px;
+    max-height: 740px;
   }
 }

@@ -1,7 +1,20 @@
 .link-button {
   width: 100%;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding-block: 10px;
   display: grid;
   place-items: center;
+}
+
+@media (min-width: 600px) {
+  .link-button {
+    border-radius: 8px;
+    padding-block: 15px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .link-button {
+    padding-block: 20px;
+  }
 }

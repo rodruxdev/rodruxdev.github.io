@@ -19,7 +19,7 @@
 }
 
 .project-card:nth-child(4) {
-  display: hidden;
+  display: none;
 }
 
 .project-card:nth-child(1) {

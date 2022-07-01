@@ -5,10 +5,20 @@ import Image from 'next/image';
 import styles from '@styles/ProjectCard.module.css';
 import PROJECTS from 'utils/projects';
 
-const ProjectCard = ({ index }) => {
+const cardClasses = {
+  1: 'next',
+  2: '',
+  3: 'previous',
+  0: 'hidden',
+};
+
+const ProjectCard = ({ index, position }) => {
   const { title, description, image, stack } = PROJECTS[index];
+  const classSelected = cardClasses[position] ?? cardClasses[0];
+  console.log('🚀 ~ file: ProjectCard.jsx ~ line 18 ~ ProjectCard ~ classSelected', classSelected);
+  const cardClass = `${styles['project-card']} ${styles[classSelected] ?? ''} blue-border`;
   return (
-    <div className={`${styles['project-card']} blue-border`}>
+    <div className={cardClass}>
       <h4>{title}</h4>
       <p className={styles['project-card__text']}>{description}</p>
       <ul className={styles['project-card__tags-container']}>
@@ -19,7 +29,7 @@ const ProjectCard = ({ index }) => {
       <div className={styles['project-card__image-container']}>
         <Image src={require('../../public/' + image)} alt="Image of the project" width={800} height={450} objectFit="contain" />
       </div>
-      <ActionButton>MORE INFO</ActionButton>
+      <ActionButton index={index}>MORE INFO</ActionButton>
     </div>
   );
 };

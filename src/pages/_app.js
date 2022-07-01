@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import AppContext from '@context/AppContext';
 import '@styles/globals.css';
+import useUI from '@hooks/useUI';
 
 function MyApp({ Component, pageProps }) {
+  const state = useUI();
   return (
     <>
       <Head>
@@ -15,7 +18,9 @@ function MyApp({ Component, pageProps }) {
         gtag('js', new Date());
         gtag('config', 'G-68HDCXW2CC');`}
       </Script>
-      <Component {...pageProps} />
+      <AppContext.Provider value={state}>
+        <Component {...pageProps} />
+      </AppContext.Provider>
     </>
   );
 }

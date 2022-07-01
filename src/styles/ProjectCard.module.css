@@ -9,24 +9,24 @@
   align-items: center;
   gap: 15px;
   position: absolute;
-  transform: translateX(4vw);
+  transform: translateX(4vw) translateY(0);
 }
 
-.project-card:nth-child(1),
-.project-card:nth-child(3) {
-  bottom: 0;
+.project-card:nth-child(2n + 1) {
   border-color: var(--orange);
 }
 
-.project-card:nth-child(4) {
+.hidden {
   display: none;
 }
 
-.project-card:nth-child(1) {
+.previous {
+  bottom: 0;
   transform: scale(0.9) translate(-93%, 5.5%);
 }
 
-.project-card:nth-child(3) {
+.next {
+  bottom: 0;
   transform: scale(0.9) translate(103%, 5.5%);
 }
 
@@ -42,8 +42,10 @@
 
 .project-card__tags-container{
   width: 100%;
+  height: 23px;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -60,13 +62,14 @@
     width: 92vw;
     padding: 30px 60px;
   }
-  .project-card:nth-child(1) {
+  .previous {
     transform: scale(0.9) translate(-95%, 5.5%);
   }
-  .project-card:nth-child(3) {
+  .next {
     transform: scale(0.9) translate(105%, 5.5%);
   }
   .project-card__tags-container {
+    height: 38px;
     gap: 20px;
   }
 }
@@ -76,22 +79,25 @@
     padding: 30px 100px;
   }
   .project-card {
-    transform: translateX(calc((100vw - 800px) / 2));
+    transform: translate(calc((100vw - 800px) / 2), 0);
   }
-  .project-card:nth-child(1) {
+  .previous {
     transform: scale(0.9) translateY(5.5%) translateX(calc((0.46 * 100vw) - 1121px));
   }
-  .project-card:nth-child(3) {
+  .next {
     transform: scale(0.9) translateY(5.5%) translateX(calc((0.7 * 100vw) + 193px));
   }
 }
 
 @media (min-width: 1200px) {
-  .project-card:nth-child(1) {
+  .previous {
     transform: scale(0.9) translateY(5.5%) translateX(calc((0.54 * 100vw) - 1178px));
   }
-  .project-card:nth-child(3) {
+  .next {
     transform: scale(0.9) translateY(5.5%) translateX(calc((0.57 * 100vw) + 289px));
+  }
+  .project-card__tags-container {
+    height: 43px;
   }
 }
 
@@ -107,12 +113,12 @@
      -webkit-box-orient: vertical;
   }
   .project-card {
-    transform: translateX(calc((100vw - 1000px) / 2));
+    transform: translate(calc((100vw - 1000px) / 2), 0);
   }
-  .project-card:nth-child(1) {
+  .previous {
     transform: scale(0.9) translateY(5.5%) translateX(calc((0.56 * 100vw) - 1544px));
   }
-  .project-card:nth-child(3) {
+  .next {
     transform: scale(0.9) translateY(5.5%) translateX(calc((0.56 * 100vw) + 421px));
   }
 }

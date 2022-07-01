@@ -6,6 +6,10 @@ const initialState = {
     if (index < 3) return index + 1;
     return 0;
   }),
+  modal: {
+    open: false,
+    index: 0,
+  },
 };
 
 const useUI = () => {
@@ -22,7 +26,27 @@ const useUI = () => {
     }
     setState({ ...state, carrousel: newCarrousel });
   };
-  return { state, setCarrousel };
+  const setOpenModal = (index) => {
+    const newState = {
+      ...state,
+      modal: {
+        open: true,
+        index,
+      },
+    };
+    setState(newState);
+  };
+  const setCloseModal = () => {
+    const newState = {
+      ...state,
+      modal: {
+        ...state.modal,
+        open: false,
+      },
+    };
+    setState(newState);
+  };
+  return { state, setCarrousel, setOpenModal, setCloseModal };
 };
 
 export default useUI;

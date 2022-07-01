@@ -6,8 +6,12 @@ import Hero from '@containers/Hero';
 import logo from '../../public/logo.png';
 import Head from 'next/head';
 import Projects from '@containers/Projects';
+import ProjectModal from '@containers/ProjectModal';
+import { useContext } from 'react';
+import AppContext from '@context/AppContext';
 
 export default function Home() {
+  const { state } = useContext(AppContext);
   return (
     <>
       <Head>
@@ -44,6 +48,7 @@ export default function Home() {
       <Projects />
       <AbilitiesSection />
       <Footer />
+      {state.modal.open ? <ProjectModal index={state.modal.index} open={state.modal.open} /> : null}
     </>
   );
 }

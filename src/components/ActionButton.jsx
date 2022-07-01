@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styles from '@styles/ActionButton.module.css';
 import AppContext from '@context/AppContext';
 
-const ActionButton = ({ index, children }) => {
+const ActionButton = ({ index, disableButton, children }) => {
   const { setOpenModal } = useContext(AppContext);
   let boxColor = 'blue-box';
   if (index % 2 === 0) {
@@ -12,7 +12,7 @@ const ActionButton = ({ index, children }) => {
     setOpenModal(index);
   };
   return (
-    <button className={`${styles['action-button']} ${boxColor}`} onClick={handleOpenModal}>
+    <button className={`${styles['action-button']} ${boxColor}`} onClick={handleOpenModal} disabled={disableButton}>
       {children}
     </button>
   );

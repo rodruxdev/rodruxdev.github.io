@@ -15,7 +15,6 @@ const cardClasses = {
 const ProjectCard = ({ index, position }) => {
   const { title, description, image, stack } = PROJECTS[index];
   const classSelected = cardClasses[position] ?? cardClasses[0];
-  console.log('🚀 ~ file: ProjectCard.jsx ~ line 18 ~ ProjectCard ~ classSelected', classSelected);
   const cardClass = `${styles['project-card']} ${styles[classSelected] ?? ''} blue-border`;
   return (
     <div className={cardClass}>
@@ -29,7 +28,9 @@ const ProjectCard = ({ index, position }) => {
       <div className={styles['project-card__image-container']}>
         <Image src={require('../../public/' + image)} alt="Image of the project" width={800} height={450} objectFit="contain" />
       </div>
-      <ActionButton index={index}>MORE INFO</ActionButton>
+      <ActionButton index={index} disableButton={position === 2 ? false : true}>
+        MORE INFO
+      </ActionButton>
     </div>
   );
 };

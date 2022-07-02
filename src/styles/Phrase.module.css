@@ -55,7 +55,6 @@
     grid-area: 1 / 1 / 2 / 2;
     border: none;
     background-color: var(--blue);
-    box-shadow: 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6);
     color: var(--white);
   }
   .phrase__text {

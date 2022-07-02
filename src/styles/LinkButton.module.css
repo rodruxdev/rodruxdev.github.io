@@ -4,6 +4,12 @@
   padding-block: 10px;
   display: grid;
   place-items: center;
+  transition: 0.1s ease-in;
+}
+
+.link-button:hover,
+.link-button:focus {
+  transform: scale(1.02);
 }
 
 @media (min-width: 600px) {

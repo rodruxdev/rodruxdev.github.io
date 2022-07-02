@@ -48,7 +48,13 @@
   right: 10px;
   display: grid;
   place-items: center;
+  transition: 0.1s ease-in;
   cursor: pointer;
+}
+
+.project-modal__close-button:hover,
+.project-modal__close-button:focus {
+  transform: scale(1.1);
 }
 
 .project-modal__close-icon {

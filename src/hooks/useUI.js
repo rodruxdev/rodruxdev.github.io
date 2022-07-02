@@ -3,7 +3,7 @@ import { PROJECT_LENGTH } from 'utils/projects';
 
 const initialState = {
   carrousel: [...Array(PROJECT_LENGTH)].map((_, index) => {
-    if (index < 3) return index + 1;
+    if (index < 5) return index + 1;
     return 0;
   }),
   modal: {

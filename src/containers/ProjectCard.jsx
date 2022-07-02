@@ -6,16 +6,22 @@ import styles from '@styles/ProjectCard.module.css';
 import PROJECTS from 'utils/projects';
 
 const cardClasses = {
-  1: 'next',
-  2: '',
-  3: 'previous',
+  1: 'hidden-next',
+  2: 'next',
+  3: '',
+  4: 'previous',
+  5: 'hidden-previous',
   0: 'hidden',
 };
 
 const ProjectCard = ({ index, position }) => {
   const { title, description, image, stack } = PROJECTS[index];
   const classSelected = cardClasses[position] ?? cardClasses[0];
-  const cardClass = `${styles['project-card']} ${styles[classSelected] ?? ''} blue-border`;
+  let boxColor = 'blue-border';
+  if (index % 2 === 1) {
+    boxColor = 'orange-border';
+  }
+  const cardClass = `${styles['project-card']} ${styles[classSelected] ?? ''} ${boxColor}`;
   return (
     <div className={cardClass}>
       <h4>{title}</h4>
@@ -28,7 +34,7 @@ const ProjectCard = ({ index, position }) => {
       <div className={styles['project-card__image-container']}>
         <Image src={require('../../public/' + image)} alt="Image of the project" width={800} height={450} objectFit="contain" />
       </div>
-      <ActionButton index={index} disableButton={position === 2 ? false : true}>
+      <ActionButton index={index} disableButton={position === 3 ? false : true}>
         MORE INFO
       </ActionButton>
     </div>

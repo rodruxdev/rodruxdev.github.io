@@ -3,7 +3,7 @@ import styles from '@styles/LinkButton.module.css';
 
 const LinkButton = React.forwardRef(function Button({ href, onClick, index, children }, ref) {
   let boxColor = 'blue-box';
-  if (index % 2 === 0) {
+  if (index % 2 === 1) {
     boxColor = 'orange-box';
   }
   if (index === -1) {

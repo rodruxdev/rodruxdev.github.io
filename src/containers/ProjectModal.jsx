@@ -12,7 +12,7 @@ const ProjectModal = ({ index, open }) => {
   const { setCloseModal } = useContext(AppContext);
   const { title, description, image, stack, urlWeb, urlGithub } = PROJECTS[index];
   let boxColor = 'blue-border';
-  if (index % 2 === 0) {
+  if (index % 2 === 1) {
     boxColor = 'orange-border';
   }
   useEffect(() => {

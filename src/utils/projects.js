@@ -34,6 +34,15 @@ const PROJECTS = [
     urlWeb: 'https://rodruxdev.github.io/cesar-cipher-game/',
     urlGithub: 'https://github.com/rodruxdev/cesar-cipher-game',
   },
+  {
+    title: 'Cesar Cipher Game',
+    description:
+      "This is a game to decipher some words using Cesar Cipher. This page also let you cipher or decipher your own messages. This page follows the instruction in a project of Laboratoria's Bootcamp.",
+    image: 'cesar-cipher-game.png',
+    stack: ['html', 'css', 'js', 'jest'],
+    urlWeb: 'https://rodruxdev.github.io/cesar-cipher-game/',
+    urlGithub: 'https://github.com/rodruxdev/cesar-cipher-game',
+  },
 ];
 
 export const PROJECT_LENGTH = PROJECTS.length;

@@ -5,7 +5,7 @@ import AppContext from '@context/AppContext';
 const ActionButton = ({ index, disableButton, children }) => {
   const { setOpenModal } = useContext(AppContext);
   let boxColor = 'blue-box';
-  if (index % 2 === 0) {
+  if (index % 2 === 1) {
     boxColor = 'orange-box';
   }
   const handleOpenModal = () => {

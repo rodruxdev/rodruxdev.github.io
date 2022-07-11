@@ -1,5 +1,14 @@
 const PROJECTS = [
   {
+    title: 'Trivia GOTR',
+    description:
+      "This is a Trivia game about Game of Thrones and The Lord of the Ring. You have to answer six questions in 30 seconds each. Then you see the wrong and correct answers. If time runs out you have to play again. This page follows the instruction in a project of Laboratoria's Bootcamp.",
+    image: 'trivia-GOTR.png',
+    stack: ['html', 'css', 'javascript', 'jest'],
+    urlWeb: 'https://rodruxdev.github.io/trivia-GOTR/src/choice.html',
+    urlGithub: 'https://github.com/rodruxdev/trivia-GOTR',
+  },
+  {
     title: 'Rodrux Player',
     description: 'This is a web page to practice animations and mockup with html and css. The page has neuromorphic design and few interactions with buttons.',
     image: 'rodrux-player.png',
@@ -33,15 +42,6 @@ const PROJECTS = [
     stack: ['html', 'css', 'javascript', 'jest'],
     urlWeb: 'https://rodruxdev.github.io/cesar-cipher-game/',
     urlGithub: 'https://github.com/rodruxdev/cesar-cipher-game',
-  },
-  {
-    title: 'Trivia GOTR',
-    description:
-      "This is a Trivia game about Game of Thrones and The Lord of the Ring. You have to answer six questions in 30 seconds each. Then you see the wrong and correct answers. If time runs out you have to play again. This page follows the instruction in a project of Laboratoria's Bootcamp.",
-    image: 'trivia-GOTR.png',
-    stack: ['html', 'css', 'javascript', 'jest'],
-    urlWeb: 'https://rodruxdev.github.io/trivia-GOTR/src/choice.html',
-    urlGithub: 'https://github.com/rodruxdev/trivia-GOTR',
   },
 ];
 

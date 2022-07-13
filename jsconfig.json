@@ -13,7 +13,13 @@
       ],
       "@styles/*": [
         "styles/*"
-      ]
+      ],
+      "@context/*": [
+        "context/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
     }
   }
 }

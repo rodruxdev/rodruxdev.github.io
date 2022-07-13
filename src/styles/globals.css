@@ -17,7 +17,6 @@ body {
 body {
   background-color: var(--background);
   color: var(--white);
-  text-shadow: 0px 0px 3px rgba(233,230,233,0.4);
 }
 
 * {
@@ -29,10 +28,9 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: var(--white);
-  text-shadow: 0px 0px 3px rgba(233,230,233,0.4);
 }
 
-p {
+p, button {
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -43,7 +41,7 @@ h1, h2{
   margin: 0;
 }
 
-h3 {
+h3, h4 {
   margin: 0;
   font-size: 1.8rem;
   line-height: 2.3rem;
@@ -57,15 +55,22 @@ p > span {
   font-weight: 500;
 }
 
+button {
+  font-family: "Chakra Petch", sans-serif;
+}
+
 .blue-box {
   background-color: var(--blue);
-  box-shadow: 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6);
   color: var(--white);
 }
 
 .orange-box {
   background-color: var(--orange);
-  box-shadow: 0px 0px 25px -6px rgba(255, 112, 46, 0.6);
+  color: var(--black);
+}
+
+.white-box {
+  background-color: var(--white);
   color: var(--black);
 }
 
@@ -73,18 +78,12 @@ p > span {
   border: 3px solid var(--blue);
   background-color: transparent;
   color: var(--white);
-  box-shadow:
-    0px 0px 20px -4.5px rgba(12, 69, 173, 0.6),
-    inset 0px 0px 20px -4.5px rgba(12, 69, 173, 0.6);
 }
 
 .orange-border {
   border: 3px solid var(--orange);
   background-color: transparent;
   color: var(--white);
-  box-shadow:
-    0px 0px 25px -6px rgba(255, 112, 46, 0.6),
-    inset 0px 0px 20px -6px rgba(255, 112, 46, 0.6);
 }
 
 a:focus {
@@ -93,14 +92,14 @@ a:focus {
 }
 
 @media (min-width: 600px) {
-  a, p {
+  a, p, button {
     font-size: 2.1rem;
     line-height: 2.4rem;
   }
   p > span {
     font-size: 1.9rem;
   }
-  h3 {
+  h3, h4 {
     font-size: 2.8rem;
   }
   .blue-border {
@@ -112,27 +111,27 @@ a:focus {
 }
 
 @media (min-width: 1000px) {
-  a, p {
+  a, p, button {
     font-size: 2.1rem;
     line-height: 2.4rem;
   }
   p > span {
     font-size: 1.9rem;
   }
-  h3 {
+  h3, h4 {
     font-size: 2.4rem;
   }
 }
 
 @media (min-width: 1700px) {
-  a, p {
+  a, p, button {
     font-size: 3.4rem;
     line-height: 4rem;
   }
   p > span {
     font-size: 3rem;
   }
-  h3 {
+  h3, h4 {
     font-size: 4rem;
   }
   .blue-border {

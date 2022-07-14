@@ -1,0 +1,30 @@
+.post-card {
+  width: 94%;
+  max-width: 500px;
+  padding: 30px 40px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-card__text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
+.post-card__image-container {
+  width: 66.7vw;
+  max-width: 350px;
+}
+
+.post-card:nth-child(2) {
+  border-color: var(--orange);
+}

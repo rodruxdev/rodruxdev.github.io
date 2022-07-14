@@ -1,0 +1,27 @@
+.icon-link-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-link__text {
+  text-decoration: underline;
+}
+
+.icon-link__icon-container {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-link__icon {
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+}

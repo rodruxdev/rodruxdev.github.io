@@ -1,5 +1,6 @@
 .recent-posts {
   width: 100%;
+  margin-block: 30px;
 }
 
 .recent-posts__title {
@@ -19,6 +20,9 @@
 }
 
 @media (min-width: 600px) {
+  .recent-posts {
+    margin-block: 40px;
+  }
   .recent-posts__title {
     width: 250px;
     max-width: initial;
@@ -31,6 +35,9 @@
 }
 
 @media (min-width: 1000px) {
+  .recent-posts {
+    margin-block: 50px;
+  }
   .recent-posts__container {
     width: 98%;
     max-width: 1430px;
@@ -47,6 +54,6 @@
   .recent-posts__title {
     width: 370px;
     padding: 40px 30px;
-    border-radius: 0px 15px 20px 0px;
+    border-radius: 0px 15px 40px 0px;
   }
 }

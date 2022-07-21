@@ -9,6 +9,7 @@ import Projects from '@containers/Projects';
 import ProjectModal from '@containers/ProjectModal';
 import { useContext } from 'react';
 import AppContext from '@context/AppContext';
+import RecentPosts from '@containers/RecentPosts';
 
 export default function Home() {
   const { state } = useContext(AppContext);
@@ -47,6 +48,7 @@ export default function Home() {
       <AboutSection />
       <Projects />
       <AbilitiesSection />
+      <RecentPosts />
       <Footer />
       {state.modal.open ? <ProjectModal index={state.modal.index} open={state.modal.open} /> : null}
     </>

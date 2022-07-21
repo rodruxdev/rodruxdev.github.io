@@ -15,8 +15,8 @@
   padding-left: 8%;
   justify-content: start;
   align-items: center;
-  border-top-left-radius: 18.75% 50%;
-  border-bottom-left-radius: 6.3% 17%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
 }
 
 .about-section__quotes {
@@ -53,8 +53,8 @@
     grid-row: 1 / 2;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 7% 20%;
-    border-bottom-right-radius: 7% 20%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 20px;
   }
   .about-section__quotes {
     height: 100%;

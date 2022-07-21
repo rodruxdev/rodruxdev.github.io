@@ -1,8 +1,8 @@
 .skills {
   max-width: 1100px;
   border-left: none;
-  border-top-right-radius: 14.3% 11.6%;
-  border-bottom-right-radius: 5.7% 4.6%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 20px;
   padding-top: 20px;
   padding-bottom: 50px;
   padding-inline: 5%;
@@ -79,6 +79,8 @@
   .skills {
     padding-right: 70px;
     padding-bottom: 30px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 40px;
   }
   .skills__list-container {
     height: calc(-0.16 * 100vw + 587px);

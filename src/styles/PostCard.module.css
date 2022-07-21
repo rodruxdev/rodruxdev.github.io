@@ -36,7 +36,7 @@
     gap: 20px;
   }
   .post-card__image-container {
-    width: 530px;
+    width: 100%;
     max-width: initial;
   }
 }
@@ -51,7 +51,6 @@
   }
   .post-card__image-container {
     min-width: 250px;
-    width: 80%;
   }
   .post-card:first-child {
     margin-top: 100px;
@@ -71,8 +70,5 @@
     max-width: initial;
     padding: 30px 80px;
     gap: 30px;
-  }
-  .post-card__image-container {
-    width: 100%;
   }
 }

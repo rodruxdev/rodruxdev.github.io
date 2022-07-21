@@ -40,6 +40,7 @@
     border-bottom-left-radius: 50px;
   }
   .contact__links {
+    gap: 6.5%;
     border-top-left-radius: 40px;
   }
 }
@@ -49,13 +50,13 @@
     height: 100%;
   }
   .contact__title {
-    padding-top: 30px;
+    padding-top: 15px;
   }
 }
 
 @media (min-width: 1700px) {
   .contact__title {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 50px;
   }
 }

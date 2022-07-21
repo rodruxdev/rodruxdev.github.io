@@ -9,20 +9,14 @@
 
 @media (min-width: 600px) {
   .carrousel {
-    height: calc((0.14 * 100vw) + 530px);
+    height: calc((0.14 * 100vw) + 540px);
     margin-bottom: 15px;
   }
 }
 
 @media (min-width: 1200px)  {
   .carrousel {
-    max-height: 700px;
+    max-height: 770px;
     margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1700px)  {
-  .carrousel {
-    max-height: 740px;
   }
 }

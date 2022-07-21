@@ -8,15 +8,15 @@
 
 .picture__decoration--orange {
   grid-area: 1 / 3 / 3 / 6;
-  border-top-left-radius: 15% 17%;
-  border-bottom-left-radius: 7% 8%;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 20px;
   border-right-width: 0;
 }
 
 .picture__decoration--blue {
   grid-area: 2 / 1 / 4 / 4;
-  border-top-right-radius: 15% 17%;
-  border-bottom-right-radius: 7% 8%;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 20px;
   border-left: none;
 }
 
@@ -49,11 +49,15 @@
     height: 32.5vw;
   }
   .picture__decoration--orange {
-    border-top-right-radius: 15% 17%;
-    border-bottom-right-radius: 7% 8%;
-    border-top-left-radius: 7% 8%;
-    border-bottom-left-radius: 15% 17%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 80px;
     border-right-width: 5px;
+  }
+  .picture__decoration--blue {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 30px;
   }
 }
 

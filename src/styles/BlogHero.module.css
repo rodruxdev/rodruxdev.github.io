@@ -85,3 +85,13 @@
     padding: 40px 90px;
   }
 }
+
+@media (min-width: 1700px) {
+  .blog-hero {
+    max-width: 1600px;
+    height: 650px;
+  }
+  .blog-hero__text-container {
+    padding: 40px 100px;
+  }
+}

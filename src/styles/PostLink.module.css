@@ -36,3 +36,10 @@
     border-radius: 20px 30px 20px 40px;
   }
 }
+
+@media (min-width: 1700px) {
+  .post-link {
+    max-width: initial;
+    padding: 50px;
+  }
+}

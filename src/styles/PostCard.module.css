@@ -65,3 +65,14 @@
     grid-column: 4 / 6;
   }
 }
+
+@media (min-width: 1700px) {
+  .post-card {
+    max-width: initial;
+    padding: 30px 80px;
+    gap: 30px;
+  }
+  .post-card__image-container {
+    width: 100%;
+  }
+}

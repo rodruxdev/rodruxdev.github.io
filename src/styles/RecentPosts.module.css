@@ -40,3 +40,13 @@
     grid-template-columns: 32.5% 2.5% 30% 2.5% 32.5%;
   }
 }
+@media (min-width: 1700px) {
+  .recent-posts__container {
+    max-width: 1800px;
+  }
+  .recent-posts__title {
+    width: 370px;
+    padding: 40px 30px;
+    border-radius: 0px 15px 20px 0px;
+  }
+}

@@ -48,3 +48,14 @@
     row-gap: 50px;
   }
 }
+
+@media (min-width: 1700px) {
+  .old-posts__title {
+    width: 370px;
+    padding: 40px;
+    border-radius: 25px 0px 0px 20px;
+  }
+  .old-posts__container {
+    max-width: 1800px;
+  }
+}

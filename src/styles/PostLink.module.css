@@ -25,3 +25,14 @@
     padding: 30px;
   }
 }
+
+@media (min-width: 600px) {
+  .post-link {
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 20px 40px 20px 30px;
+  }
+  .post-link:nth-child(2n) {
+    border-radius: 20px 30px 20px 40px;
+  }
+}

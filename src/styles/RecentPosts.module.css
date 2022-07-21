@@ -23,8 +23,20 @@
     width: 250px;
     max-width: initial;
     padding: 30px 20px;
+    text-align: center;
   }
   .recent-posts__container {
     row-gap: 25px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .recent-posts__container {
+    width: 98%;
+    max-width: 1430px;
+    margin-inline: auto;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 32.5% 2.5% 30% 2.5% 32.5%;
   }
 }

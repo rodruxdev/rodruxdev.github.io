@@ -54,3 +54,34 @@
     padding: 40px 30px 25px;
   }
 }
+
+@media (min-width: 1000px) {
+  .blog-hero {
+    width: 91%;
+    max-width: 1300px;
+    height: 500px;
+    margin-block: 50px;
+    margin-inline: auto;
+    grid-template-columns: 46% 5% 49%;
+    grid-template-rows: 45% 35% 20%;
+  }
+  .blog-hero__image {
+    padding: 50px;
+    border-radius: 50px 30px 40px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: 1;
+  }
+  .blog-hero__text-container {
+    padding: 40px 60px;
+    border-radius: 40px 60px 40px 50px;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog-hero__text-container {
+    padding: 40px 90px;
+  }
+}

@@ -6,7 +6,7 @@
   width: 55%;
   max-width: 180px;
   margin-bottom: 30px;
-  padding: 20px 20px 15px;
+  padding: 20px;
   border-radius: 0px 10px 15px 0px;
 }
 
@@ -15,5 +15,16 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  row-gap: 10px;
+  row-gap: 15px;
+}
+
+@media (min-width: 600px) {
+  .recent-posts__title {
+    width: 250px;
+    max-width: initial;
+    padding: 30px 20px;
+  }
+  .recent-posts__container {
+    row-gap: 25px;
+  }
 }

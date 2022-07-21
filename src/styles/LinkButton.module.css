@@ -1,10 +1,14 @@
-.link-button {
+.link-button, .link-button__blog {
   width: 100%;
   border-radius: 8px;
   padding-block: 10px;
   display: grid;
   place-items: center;
   transition: 0.1s ease-in;
+}
+
+.link-button__blog {
+  width: 70%;
 }
 
 .link-button:hover,
@@ -16,6 +20,11 @@
   .link-button {
     border-radius: 8px;
     padding-block: 15px;
+  }
+  .link-button__blog {
+    border-radius: 8px;
+    padding-block: 20px;
+    width: 60%;
   }
 }
 

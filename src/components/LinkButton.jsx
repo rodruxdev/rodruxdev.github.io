@@ -9,8 +9,9 @@ const LinkButton = React.forwardRef(function Button({ href, onClick, index, chil
   if (index === -1) {
     boxColor = 'white-box';
   }
+  //TODO Change normal button and blog button
   return (
-    <a href={href} target="blank" ref={ref} onClick={onClick} className={`${styles['link-button']} ${boxColor}`}>
+    <a href={href} target="blank" ref={ref} onClick={onClick} className={`${styles['link-button__blog']} ${boxColor}`}>
       {children}
     </a>
   );

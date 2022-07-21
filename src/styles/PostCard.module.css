@@ -28,3 +28,14 @@
 .post-card:nth-child(2) {
   border-color: var(--orange);
 }
+
+@media (min-width: 600px) {
+  .post-card {
+    max-width: 750px;
+    padding: 40px 50px;
+    gap: 20px;
+  }
+  .post-card__image-container {
+    max-width: 530px;
+  }
+}

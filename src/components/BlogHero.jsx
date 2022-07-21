@@ -8,7 +8,7 @@ const BlogHero = ({ title, description, image }) => {
   return (
     <article className={styles['blog-hero']}>
       <div className={`${styles['blog-hero__image']} orange-border`}>
-        <Image src={require('../../public/' + image)} alt="Image of the blog" width={240} height={180} objectFit="contain" />
+        <Image src={require('../../public/' + image)} alt="Image of the blog" width={400} height={225} objectFit="contain" />
       </div>
       <div className={`${styles['blog-hero__text-container']} blue-box`}>
         <h2 className={styles['blog-hero__title']}>{title}</h2>

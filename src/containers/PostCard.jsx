@@ -7,10 +7,10 @@ import Link from 'next/link';
 const PostCard = ({ title, description, image }) => {
   return (
     <article className={`${styles['post-card']} blue-border`}>
-      <h4>{title}</h4>
+      <h4 className={styles['post-card__title']}>{title}</h4>
       <p className={styles['post-card__text']}>{description}</p>
       <div className={styles['post-card__image-container']}>
-        <Image src={require('../../public/' + image)} alt="Image of the blog" width={800} height={450} objectFit="contain" />
+        <Image src={image} alt="Image of the blog" width={800} height={450} objectFit="contain" />
       </div>
       <Link href="/blog" passHref>
         <LinkButton>READ ALL</LinkButton>

@@ -10,8 +10,10 @@ import ProjectModal from '@containers/ProjectModal';
 import { useContext } from 'react';
 import AppContext from '@context/AppContext';
 import RecentPosts from '@containers/RecentPosts';
+import { getPagesFromDatabase } from 'lib/notion';
+import PostCard from '@containers/PostCard';
 
-export default function Home() {
+export default function Home({ recentPosts }) {
   const { state } = useContext(AppContext);
   return (
     <>
@@ -48,9 +50,28 @@ export default function Home() {
       <AboutSection />
       <Projects />
       <AbilitiesSection />
-      <RecentPosts />
+      <RecentPosts>
+        {recentPosts.map((post) => {
+          return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} />;
+        })}
+      </RecentPosts>
       <Footer />
       {state.modal.open ? <ProjectModal index={state.modal.index} open={state.modal.open} /> : null}
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const limit = 3;
+  const data = await getPagesFromDatabase(limit);
+  const recentPosts = data
+    .map((element) => {
+      const title = element.properties?.Name?.title[0]?.plain_text ?? '';
+      const description = element?.properties?.Description?.rich_text[0]?.plain_text ?? '';
+      const image = element?.cover?.file?.url ?? '';
+      const pageId = element.id;
+      return { title, description, image, pageId };
+    })
+    .reverse();
+  return { props: { recentPosts } };
 }

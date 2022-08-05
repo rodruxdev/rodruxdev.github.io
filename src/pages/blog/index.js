@@ -2,8 +2,9 @@ import BlogHero from '@components/BlogHero';
 import Footer from '@containers/Footer';
 import Header from '@containers/Header';
 import OldPosts from '@containers/OldPosts';
+import PostCard from '@containers/PostCard';
 import RecentPosts from '@containers/RecentPosts';
-import { getBlocksFromPage, getPage, getPagesFromDatabase } from 'lib/notion';
+import { getPagesFromDatabase } from 'lib/notion';
 import Head from 'next/head';
 import React from 'react';
 import logo from '../../../public/logo.png';
@@ -41,8 +42,12 @@ const Blog = ({ heroPost, recentPosts, oldPosts }) => {
       </Head>
       <Header />
       <BlogHero title={heroPost.title} description={heroPost.description} image={heroPost.image} />
-      <RecentPosts />
-      <OldPosts />
+      <RecentPosts>
+        {recentPosts.map((post) => {
+          return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} />;
+        })}
+      </RecentPosts>
+      {oldPosts.length > 1 ? <OldPosts /> : null}
       <Footer />
     </>
   );

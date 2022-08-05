@@ -4,15 +4,15 @@ const notion = new Client({
   auth: process.env.NOTION_KEY,
 });
 
-export const getPagesFromDatabase = async () => {
+export const getPagesFromDatabase = async (limit = 100, direction = 'ascending') => {
   const databaseId = process.env.NOTION_DATABASE_ESP_ID;
   const sorts = [
     {
       timestamp: 'created_time',
-      direction: 'ascending',
+      direction: direction,
     },
   ];
-  const response = await notion.databases.query({ database_id: databaseId, sorts: sorts });
+  const response = await notion.databases.query({ database_id: databaseId, sorts: sorts, page_size: limit });
   return response?.results;
 };
 

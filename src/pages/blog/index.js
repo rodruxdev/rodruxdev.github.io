@@ -3,17 +3,12 @@ import Footer from '@containers/Footer';
 import Header from '@containers/Header';
 import OldPosts from '@containers/OldPosts';
 import RecentPosts from '@containers/RecentPosts';
+import { getBlocksFromPage, getPage, getPagesFromDatabase } from 'lib/notion';
 import Head from 'next/head';
 import React from 'react';
 import logo from '../../../public/logo.png';
 
-const post = {
-  title: 'Marketing Coordinator',
-  description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...',
-  image: 'buying-list.png',
-};
-
-const Blog = () => {
+const Blog = ({ heroPost, recentPosts, oldPosts }) => {
   return (
     <>
       <Head>
@@ -45,12 +40,37 @@ const Blog = () => {
         <meta name="twitter:image:alt" content="Rodrigo Goitia | RODRUX Logo" />
       </Head>
       <Header />
-      <BlogHero title={post.title} description={post.description} image={post.image} />
+      <BlogHero title={heroPost.title} description={heroPost.description} image={heroPost.image} />
       <RecentPosts />
       <OldPosts />
       <Footer />
     </>
   );
 };
+
+export async function getServerSideProps() {
+  const data = await getPagesFromDatabase();
+  let heroPost;
+  const recentPosts = [];
+  const oldPosts = [];
+
+  for (let i = 0; i < data.length; i++) {
+    const title = data[i].properties?.Name?.title[0]?.plain_text ?? '';
+    const description = data[i]?.properties?.Description?.rich_text[0]?.plain_text ?? '';
+    const image = data[i]?.cover?.file?.url ?? '';
+    const pageId = data[i].id;
+    if (i === 0) {
+      heroPost = { title, description, image, pageId };
+    }
+    if (i > 0 && i <= 3) {
+      recentPosts.push({ title, description, image, pageId });
+    }
+    if (i > 3) {
+      oldPosts.push({ title, description, image, pageId });
+    }
+  }
+
+  return { props: { heroPost, recentPosts, oldPosts } };
+}
 
 export default Blog;

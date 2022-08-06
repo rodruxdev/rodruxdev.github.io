@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '@styles/LinkButton.module.css';
 
-const LinkButton = React.forwardRef(function Button({ href, onClick, index, children }, ref) {
+const LinkButton = React.forwardRef(function Button({ href, onClick, index, target = '_blank', children }, ref) {
   let boxColor = 'blue-box';
   if (index % 2 === 1) {
     boxColor = 'orange-box';
@@ -11,7 +11,7 @@ const LinkButton = React.forwardRef(function Button({ href, onClick, index, chil
   }
   //TODO Change normal button and blog button
   return (
-    <a href={href} target="blank" ref={ref} onClick={onClick} className={`${styles['link-button__blog']} ${boxColor}`}>
+    <a href={href} target={target} ref={ref} onClick={onClick} className={`${styles['link-button__blog']} ${boxColor}`}>
       {children}
     </a>
   );

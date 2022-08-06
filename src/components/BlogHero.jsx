@@ -4,7 +4,7 @@ import React from 'react';
 import IconLink from './IconLink';
 import styles from '@styles/BlogHero.module.css';
 
-const BlogHero = ({ title, description, image, slug }) => {
+const BlogHero = ({ title, description, image, slug, url }) => {
   return (
     <article className={styles['blog-hero']}>
       <div className={`${styles['blog-hero__image-container']} orange-border`}>
@@ -15,7 +15,7 @@ const BlogHero = ({ title, description, image, slug }) => {
       <div className={`${styles['blog-hero__text-container']} blue-box`}>
         <h2 className={styles['blog-hero__title']}>{title}</h2>
         <p className={styles['blog-hero__text']}>{description}</p>
-        <Link href={`/blog/${slug}`} passHref>
+        <Link href={url ? url : `/blog/${slug}`} passHref>
           <IconLink>SEE MORE</IconLink>
         </Link>
       </div>

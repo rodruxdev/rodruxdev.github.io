@@ -41,10 +41,10 @@ const Blog = ({ heroPost, recentPosts, oldPosts }) => {
         <meta name="twitter:image:alt" content="Rodrigo Goitia | RODRUX Logo" />
       </Head>
       <Header />
-      <BlogHero title={heroPost.title} description={heroPost.description} image={heroPost.image} />
+      <BlogHero title={heroPost.title} description={heroPost.description} image={heroPost.image} slug={heroPost.pageId} url={heroPost.url} />
       <RecentPosts>
-        {recentPosts.map((post) => {
-          return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} />;
+        {recentPosts.map((post, index) => {
+          return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} slug={post.pageId} url={post.url} index={index} />;
         })}
       </RecentPosts>
       {oldPosts.length > 1 ? <OldPosts /> : null}
@@ -64,14 +64,15 @@ export async function getServerSideProps() {
     const description = data[i]?.properties?.Description?.rich_text[0]?.plain_text ?? '';
     const image = data[i]?.cover?.file?.url ?? '';
     const pageId = data[i].id;
+    const url = data[i]?.properties?.URL?.url ?? null;
     if (i === 0) {
-      heroPost = { title, description, image, pageId };
+      heroPost = { title, description, image, pageId, url };
     }
     if (i > 0 && i <= 3) {
-      recentPosts.push({ title, description, image, pageId });
+      recentPosts.push({ title, description, image, pageId, url });
     }
     if (i > 3) {
-      oldPosts.push({ title, description, image, pageId });
+      oldPosts.push({ title, description, image, pageId, url });
     }
   }
 

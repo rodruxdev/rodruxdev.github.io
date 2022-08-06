@@ -51,8 +51,8 @@ export default function Home({ recentPosts }) {
       <Projects />
       <AbilitiesSection />
       <RecentPosts>
-        {recentPosts.map((post) => {
-          return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} />;
+        {recentPosts.map((post, index) => {
+          return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} slug={post.pageId} url={post.url} index={index} />;
         })}
       </RecentPosts>
       <Footer />
@@ -70,7 +70,8 @@ export async function getServerSideProps() {
       const description = element?.properties?.Description?.rich_text[0]?.plain_text ?? '';
       const image = element?.cover?.file?.url ?? '';
       const pageId = element.id;
-      return { title, description, image, pageId };
+      const url = element?.properties?.URL?.url ?? null;
+      return { title, description, image, pageId, url };
     })
     .reverse();
   return { props: { recentPosts } };

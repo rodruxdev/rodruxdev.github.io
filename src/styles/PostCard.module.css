@@ -1,6 +1,7 @@
 .post-card {
   width: 94%;
   max-width: 500px;
+  /* height: 360px; */
   padding: 30px 40px;
   border-radius: 24px;
   display: flex;
@@ -10,11 +11,9 @@
   gap: 10px;
 }
 
-.post-card__text,
-.post-card__title {
+.post-card__text {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-wrap: break-word;
@@ -46,9 +45,17 @@
   .post-card {
     width: 100%;
     max-width: 500px;
-    padding: 20px 50px;
+    padding: 20px 40px;
     gap: 20px;
     grid-row: 1 / 2;
+  }
+  .post-card__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
   }
   .post-card__image-container {
     min-width: 250px;
@@ -56,6 +63,9 @@
   .post-card:first-child {
     margin-top: 100px;
     grid-column: 1 / 3;
+  }
+  .post-card__text {
+    -webkit-line-clamp: 3;
   }
   .post-card:nth-child(2) {
     margin-top: 50px;

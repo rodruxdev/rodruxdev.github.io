@@ -3,6 +3,8 @@ import Script from 'next/script';
 import AppContext from '@context/AppContext';
 import '@styles/globals.css';
 import useUI from '@hooks/useUI';
+import Header from '@containers/Header';
+import Footer from '@containers/Footer';
 
 function MyApp({ Component, pageProps }) {
   const state = useUI();
@@ -19,7 +21,9 @@ function MyApp({ Component, pageProps }) {
         gtag('config', 'G-68HDCXW2CC');`}
       </Script>
       <AppContext.Provider value={state}>
+        <Header />
         <Component {...pageProps} />
+        <Footer />
       </AppContext.Provider>
     </>
   );

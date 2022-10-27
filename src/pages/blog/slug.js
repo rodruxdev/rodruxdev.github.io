@@ -1,5 +1,3 @@
-import BlogHero from '@components/BlogHero';
-import OldPosts from '@containers/OldPosts';
 import PostCard from '@containers/PostCard';
 import RecentPosts from '@containers/RecentPosts';
 import { getPagesFromDatabase } from 'lib/notion';
@@ -7,7 +5,7 @@ import Head from 'next/head';
 import React from 'react';
 import logo from '../../../public/logo.png';
 
-const Blog = ({ heroPost, recentPosts, oldPosts }) => {
+const PostPage = ({ recentPosts }) => {
   return (
     <>
       <Head>
@@ -38,41 +36,29 @@ const Blog = ({ heroPost, recentPosts, oldPosts }) => {
         <meta name="twitter:image" content={`https://www.rodrux.com${logo.src}`} />
         <meta name="twitter:image:alt" content="Rodrigo Goitia | RODRUX Logo" />
       </Head>
-      <BlogHero title={heroPost.title} description={heroPost.description} image={heroPost.image} slug={heroPost.pageId} url={heroPost.url} />
       <RecentPosts>
         {recentPosts.map((post, index) => {
           return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} slug={post.pageId} url={post.url} index={index} />;
         })}
       </RecentPosts>
-      {oldPosts.length > 1 ? <OldPosts /> : null}
     </>
   );
 };
 
+export default PostPage;
+
 export async function getServerSideProps() {
-  const data = await getPagesFromDatabase();
-  let heroPost;
-  const recentPosts = [];
-  const oldPosts = [];
-
-  for (let i = 0; i < data.length; i++) {
-    const title = data[i].properties?.Name?.title[0]?.plain_text ?? '';
-    const description = data[i]?.properties?.Description?.rich_text[0]?.plain_text ?? '';
-    const image = data[i]?.cover?.file?.url ?? '';
-    const pageId = data[i].id;
-    const url = data[i]?.properties?.URL?.url ?? null;
-    if (i === 0) {
-      heroPost = { title, description, image, pageId, url };
-    }
-    if (i > 0 && i <= 3) {
-      recentPosts.push({ title, description, image, pageId, url });
-    }
-    if (i > 3) {
-      oldPosts.push({ title, description, image, pageId, url });
-    }
-  }
-
-  return { props: { heroPost, recentPosts, oldPosts } };
+  const limit = 3;
+  const data = await getPagesFromDatabase(limit);
+  const recentPosts = data
+    .map((element) => {
+      const title = element.properties?.Name?.title[0]?.plain_text ?? '';
+      const description = element?.properties?.Description?.rich_text[0]?.plain_text ?? '';
+      const image = element?.cover?.file?.url ?? '';
+      const pageId = element.id;
+      const url = element?.properties?.URL?.url ?? null;
+      return { title, description, image, pageId, url };
+    })
+    .reverse();
+  return { props: { recentPosts } };
 }
-
-export default Blog;

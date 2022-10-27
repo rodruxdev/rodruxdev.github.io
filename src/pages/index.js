@@ -1,7 +1,5 @@
 import AbilitiesSection from '@containers/AbilitiesSection';
 import AboutSection from '@containers/AboutSection';
-import Footer from '@containers/Footer';
-import Header from '@containers/Header';
 import Hero from '@containers/Hero';
 import logo from '../../public/logo.png';
 import Head from 'next/head';
@@ -45,7 +43,6 @@ export default function Home({ recentPosts }) {
         <meta name="twitter:image" content={`https://www.rodrux.com${logo.src}`} />
         <meta name="twitter:image:alt" content="Rodrigo Goitia | RODRUX Logo" />
       </Head>
-      <Header />
       <Hero />
       <AboutSection />
       <Projects />
@@ -55,7 +52,6 @@ export default function Home({ recentPosts }) {
           return <PostCard key={post.pageId} title={post.title} description={post.description} image={post.image} slug={post.pageId} url={post.url} index={index} />;
         })}
       </RecentPosts>
-      <Footer />
       {state.modal.open ? <ProjectModal index={state.modal.index} open={state.modal.open} /> : null}
     </>
   );

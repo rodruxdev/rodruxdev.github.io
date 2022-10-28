@@ -6,7 +6,7 @@
   place-items: center;
   background-color: var(--background);
   border: none;
-  border-radius: 3.4% / 14.3%;
+  border-radius: 8px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@
 
 .contact-button:before,
 .contact-button:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -52,14 +52,14 @@
 }
 
 .contact-button:hover,
-.contact-button:focus{
+.contact-button:focus {
   z-index: 1;
 }
 
 .contact-button:hover p,
 .contact-button:focus p,
 .contact-button:hover .contact-button__icon,
-.contact-button:focus .contact-button__icon{
+.contact-button:focus .contact-button__icon {
   color: var(--black);
   z-index: 1;
 }
@@ -97,7 +97,7 @@
     width: 190px;
     grid-template-columns: 40px 1fr;
   }
-  .contact-button p{
+  .contact-button p {
     color: var(--black);
   }
   .contact-button__icon {
@@ -105,7 +105,7 @@
     height: 40px;
     color: var(--black);
   }
-  .contact-button:before{
+  .contact-button:before {
     border-bottom: 80px solid var(--background);
   }
   .contact-button:after {
@@ -114,7 +114,7 @@
   .contact-button:hover p,
   .contact-button:focus p,
   .contact-button:hover .contact-button__icon,
-  .contact-button:focus .contact-button__icon{
+  .contact-button:focus .contact-button__icon {
     color: var(--white);
   }
 }
@@ -128,7 +128,7 @@
     width: 305px;
     grid-template-columns: 65px 1fr;
   }
-  .contact-button:before{
+  .contact-button:before {
     border-bottom: 150px solid var(--background);
   }
   .contact-button:after {

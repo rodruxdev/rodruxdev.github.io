@@ -15,8 +15,7 @@
   padding-left: 8%;
   justify-content: start;
   align-items: center;
-  border-top-left-radius: 18.75% 50%;
-  border-bottom-left-radius: 6.3% 17%;
+  border-radius: 20px 0px 0px 10px;
 }
 
 .about-section__quotes {
@@ -46,15 +45,12 @@
     grid-template-rows: 22.4% 10.3% 9.5% 41.4% 16.4%;
   }
 
-  .about-section_title{
+  .about-section_title {
     width: 100%;
     height: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 7% 20%;
-    border-bottom-right-radius: 7% 20%;
+    border-radius: 0px 30px 20px 0px;
   }
   .about-section__quotes {
     height: 100%;

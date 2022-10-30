@@ -21,16 +21,3 @@
     border-bottom-left-radius: 40px;
   }
 }
-
-@media (min-width: 1200px) {
-  .nav {
-    width: 450px;
-  }
-}
-
-@media (min-width: 1700px) {
-  .nav {
-    width: 580px;
-    height: 100px;
-  }
-}

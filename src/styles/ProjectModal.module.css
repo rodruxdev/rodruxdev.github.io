@@ -1,7 +1,7 @@
-.project-modal__background{
+.project-modal__background {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(6,11,16,0.8);
+  background-color: rgba(6, 11, 16, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -62,7 +62,7 @@
   height: 25px;
 }
 
-.project-modal__tags-container{
+.project-modal__tags-container {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -76,14 +76,13 @@
   max-width: 500px;
 }
 
-.project-modal__buttons-container{
+.project-modal__buttons-container {
   width: 90%;
   display: grid;
   grid-template-columns: 55% 40%;
   place-items: center;
   column-gap: 5%;
 }
-
 
 @media (min-width: 600px) {
   .project-modal {
@@ -101,7 +100,7 @@
     width: 35px;
     height: 35px;
   }
-  .project-modal__buttons-container{
+  .project-modal__buttons-container {
     width: 70%;
   }
 }
@@ -117,22 +116,5 @@
   .project-modal__close-icon {
     width: 45px;
     height: 45px;
-  }
-}
-
-@media (min-width: 1700px) {
-  .project-modal {
-    max-width: 1200px;
-    padding: 40px 80px;
-  }
-  .project-modal__close-button {
-    width: 60px;
-    height: 60px;
-    top: 15px;
-    right: 15px;
-  }
-  .project-modal__close-icon {
-    width: 55px;
-    height: 55px;
   }
 }

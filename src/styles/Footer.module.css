@@ -12,10 +12,3 @@
     grid-template-columns: 62% 38%;
   }
 }
-
-@media (min-width: 1700px) {
-  .footer {
-    height: 650px;
-    grid-template-columns: 62% 38%;
-  }
-}

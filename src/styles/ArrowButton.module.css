@@ -47,13 +47,3 @@ button:nth-child(2) > .arrow-button__icon {
     height: 55px;
   }
 }
-@media (min-width: 1700px) {
-  .arrow-button {
-    width: 70px;
-    height: 70px;
-  }
-  .arrow-button__icon {
-    width: 65px;
-    height: 65px;
-  }
-}

@@ -18,6 +18,7 @@
 .phrase__text {
   min-width: 239px;
   max-width: 82%;
+  font-size: 1.8rem;
   line-height: 2.3rem;
 }
 
@@ -37,7 +38,8 @@
   }
   .phrase__text {
     max-width: 80%;
-    line-height: inherit;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
   }
   .phrase__decoration {
     border-radius: 0px 20px 30px 0px;
@@ -62,21 +64,10 @@
   }
   .phrase__text {
     max-width: 87%;
+    font-size: 2.4rem;
     line-height: 2.8rem;
   }
   .phrase__decoration {
     display: none;
-  }
-}
-
-@media (min-width: 1700px) {
-  .phrase {
-    max-width: 760px;
-    max-height: 396px;
-    place-self: center;
-  }
-  .phrase__text {
-    font-size: 4rem;
-    line-height: 6rem;
   }
 }

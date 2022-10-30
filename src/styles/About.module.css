@@ -67,14 +67,3 @@
     border-right-width: 5px;
   }
 }
-
-@media (min-width: 1700px) {
-  .about__text-container {
-    place-self: center;
-  }
-  .about__text {
-    width: 85%;
-    font-size: 3.2rem;
-    line-height: 4.8rem;
-  }
-}

@@ -118,20 +118,3 @@
     color: var(--white);
   }
 }
-
-@media (min-width: 1700px) {
-  .contact-button__icon {
-    width: 65px;
-    height: 65px;
-  }
-  .contact-button__container {
-    width: 305px;
-    grid-template-columns: 65px 1fr;
-  }
-  .contact-button:before {
-    border-bottom: 150px solid var(--background);
-  }
-  .contact-button:after {
-    border-top: 150px solid var(--background);
-  }
-}

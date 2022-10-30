@@ -5,7 +5,7 @@ const Phrase = () => {
   return (
     <div className={styles.phrase}>
       <div className={`${styles['phrase__text-container']} orange-border`}>
-        <h3 className={`${styles.phrase__text}`}>FIGHTING CLIMATE CHANGE AND INEQUALITIES WITH CODE</h3>
+        <p className={`${styles.phrase__text}`}>FIGHTING CLIMATE CHANGE AND INEQUALITIES WITH CODE</p>
       </div>
       <div className={`${styles.phrase__decoration} blue-border`}></div>
     </div>

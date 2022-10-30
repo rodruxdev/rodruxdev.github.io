@@ -25,7 +25,6 @@
   .decoration {
     height: 100%;
     border: none;
-    box-shadow: 0px 0px 0px 0px transparent, inset 0px 0px 0px 0px transparent;
     display: grid;
     grid-template-columns: 25.8% 9.3% 19% 15.3% 18.2% 9.3% 3.1%;
     grid-template-rows: 6.8% 11.6% 5.1% 27% 16.4% 33.1%;
@@ -45,5 +44,17 @@
     border-bottom-width: 0;
     border-top-left-radius: 60px;
     border-top-right-radius: 30px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .decoration__orange {
+    z-index: -1;
+    border-left-width: 5px;
+    border-top-left-radius: 30px;
+    transform: translateX(20px);
+  }
+  .decoration__blue {
+    z-index: -2;
   }
 }

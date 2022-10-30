@@ -1,5 +1,7 @@
 .header {
   width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: 46.7% 6.6% 46.7%;
   align-items: start;

@@ -99,8 +99,6 @@
 @media (min-width: 870px) {
   .project-card {
     padding: 30px 100px;
-  }
-  .project-card {
     transform: translate(calc((100vw - 800px) / 2), 0);
   }
   .previous {
@@ -117,18 +115,21 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
+  .project-card {
+    transform: translate(200px);
+  }
   .previous {
-    transform: scale(0.9) translateY(20.5%) translateX(calc((0.54 * 100vw) - 1178px));
+    transform: scale(0.9) translateY(70px) translateX(-530px);
   }
   .next {
-    transform: scale(0.9) translateY(20.5%) translateX(calc((0.57 * 100vw) + 289px));
+    transform: scale(0.9) translateY(70px) translateX(973px);
   }
   .hidden-previous {
-    transform: scale(0.9) translate(-100%, 20.5%);
+    transform: scale(0.9) translate(-100%, 70px);
   }
   .hidden-next {
-    transform: scale(0.9) translate(200%, 20.5%);
+    transform: scale(0.9) translate(200%, 70px);
   }
   .project-card__tags-container {
     height: 43px;

@@ -55,3 +55,10 @@
     align-items: flex-start;
   }
 }
+
+@media (min-width: 1201px) {
+  .stack {
+    border-right: 5px solid var(--blue);
+    border-radius: 70px 30px 50px 40px;
+  }
+}

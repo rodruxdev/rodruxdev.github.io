@@ -21,3 +21,9 @@
     border-bottom-left-radius: 40px;
   }
 }
+
+@media (min-width: 1201px) {
+  .nav {
+    border-bottom-right-radius: 40px;
+  }
+}

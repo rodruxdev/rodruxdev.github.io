@@ -16,13 +16,13 @@ const useUI = () => {
   const [state, setState] = useState(initialState);
   const setCarrousel = (direction) => {
     let newCarrousel = [...state.carrousel];
-    if (direction === 0) {
-      const first = newCarrousel.shift();
-      newCarrousel.push(first);
-    }
-    if (direction == 1) {
+    if (direction == 0) {
       const last = newCarrousel.pop();
       newCarrousel.unshift(last);
+    }
+    if (direction === 1) {
+      const first = newCarrousel.shift();
+      newCarrousel.push(first);
     }
     setState({ ...state, carrousel: newCarrousel });
   };

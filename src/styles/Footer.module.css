@@ -1,5 +1,7 @@
 .footer {
   width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
   height: 300px;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -9,13 +11,6 @@
 @media (min-width: 1000px) {
   .footer {
     height: 430px;
-    grid-template-columns: 62% 38%;
-  }
-}
-
-@media (min-width: 1700px) {
-  .footer {
-    height: 650px;
     grid-template-columns: 62% 38%;
   }
 }

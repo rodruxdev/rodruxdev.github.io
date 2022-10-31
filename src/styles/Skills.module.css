@@ -1,8 +1,7 @@
 .skills {
   max-width: 1100px;
   border-left: none;
-  border-top-right-radius: 14.3% 11.6%;
-  border-bottom-right-radius: 5.7% 4.6%;
+  border-radius: 0px 50px 20px 0px;
   padding-top: 20px;
   padding-bottom: 50px;
   padding-inline: 5%;
@@ -46,7 +45,6 @@
   transition: 1s ease-in-out;
 }
 
-
 .skills__list li::marker {
   color: var(--white);
   font-size: 16px;
@@ -61,6 +59,7 @@
 @media (min-width: 600px) {
   .skills {
     padding-top: 35px;
+    border-radius: 0px 70px 40px 0px;
   }
   .skills__list-container {
     height: calc(-0.075 * 100vw + 445px);
@@ -88,22 +87,12 @@
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1201px) {
   .skills {
-    padding-top: 70px;
-    padding-right: 100px;
+    border-left: 5px solid var(--orange);
+    border-radius: 50px 70px 40px 30px;
   }
   .skills__list-container {
-    height: 680px;
-    height: calc(-0.1 * 100vw + 864px);
-    min-height: 680px;
-  }
-  .skills__list {
-    margin-top: 50px;
-    padding-left: 50px;
-  }
-  .skills__list li::marker {
-    color: var(--white);
-    font-size: 4rem;
+    height: 395px;
   }
 }

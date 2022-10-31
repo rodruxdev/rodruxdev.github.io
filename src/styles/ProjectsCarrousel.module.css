@@ -14,15 +14,9 @@
   }
 }
 
-@media (min-width: 1200px)  {
+@media (min-width: 1201px) {
   .carrousel {
-    max-height: 700px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1700px)  {
-  .carrousel {
-    max-height: 740px;
+    height: 698px;
+    margin-bottom: 15px;
   }
 }

@@ -15,7 +15,7 @@ const cardClasses = {
 };
 
 const ProjectCard = ({ index, position }) => {
-  const { title, description, image, stack } = PROJECTS[index];
+  const { title, description, image, basicStack } = PROJECTS[index];
   const classSelected = cardClasses[position] ?? cardClasses[0];
   let boxColor = 'blue-border';
   if (index % 2 === 1) {
@@ -24,10 +24,10 @@ const ProjectCard = ({ index, position }) => {
   const cardClass = `${styles['project-card']} ${styles[classSelected] ?? ''} ${boxColor}`;
   return (
     <div className={cardClass}>
-      <h4>{title}</h4>
+      <h4 className={styles['project-card__title']}>{title}</h4>
       <p className={styles['project-card__text']}>{description}</p>
       <ul className={styles['project-card__tags-container']}>
-        {stack.map((item) => (
+        {basicStack.map((item) => (
           <ProjectTag key={`tag-${item}`}>{item}</ProjectTag>
         ))}
       </ul>

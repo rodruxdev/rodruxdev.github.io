@@ -1,14 +1,14 @@
-.nav{
+.nav {
   width: 200px;
   height: 90px;
-  border-bottom-left-radius: 5% 11%;
+  border-bottom-left-radius: 15px;
   justify-self: end;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
 }
 
 @media (min-width: 600px) {
-  .nav{
+  .nav {
     width: 260px;
     height: 100px;
   }
@@ -18,18 +18,12 @@
   .nav {
     width: 410px;
     height: 90px;
+    border-bottom-left-radius: 40px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .nav {
-    width: 450px;
-  }
-}
-
-@media (min-width: 1700px) {
-  .nav {
-    width: 580px;
-    height: 100px;
+    border-bottom-right-radius: 40px;
   }
 }

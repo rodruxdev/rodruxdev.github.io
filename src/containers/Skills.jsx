@@ -5,12 +5,13 @@ import SkillsSelector from '@components/SkillsSelector';
 import styles from '@styles/Skills.module.css';
 
 const initialClasses = ['', `${styles.skills__next}`, `${styles.skills__previous}`];
-const subtitles = ['MY SKILLS', 'MY SOFT SKILLS', 'MY PRINCIPLES'];
+const subtitles = ['MY SKILLS', 'MY SOFT SKILLS', 'MY VALUES'];
 
 const Skills = () => {
   const [index, setIndex] = React.useState(0);
   const [classes, setClasses] = React.useState(initialClasses);
   const [subtitle, setSubtitle] = React.useState(subtitles[0]);
+  const [animation, setAnimation] = React.useState(true);
 
   const handleChangeSkills = (event) => {
     const { value } = event.target;
@@ -32,6 +33,9 @@ const Skills = () => {
 
   React.useEffect(() => {
     changeList(index);
+    if (index != 0) {
+      setAnimation(false);
+    }
   }, [index]);
 
   return (
@@ -61,7 +65,7 @@ const Skills = () => {
           <SkillsItem>{`Look after those who you love and care about, people and experience are what life's about.`}</SkillsItem>
         </ul>
       </div>
-      <SkillsSelector handleChange={handleChangeSkills} />
+      <SkillsSelector handleChange={handleChangeSkills} animation={animation} />
     </div>
   );
 };

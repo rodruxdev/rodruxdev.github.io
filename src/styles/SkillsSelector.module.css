@@ -47,6 +47,10 @@
   opacity: 1;
 }
 
+.skills-selector__label--pulse {
+  animation: pulse 1s infinite ease-in-out;
+}
+
 @media (min-width: 600px) {
   .skills-selector__label {
     width: 25px;
@@ -55,5 +59,19 @@
   .skills-selector__input {
     width: 25px;
     height: 25px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(0.95);
   }
 }

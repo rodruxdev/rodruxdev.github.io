@@ -1,6 +1,7 @@
 .projects {
   width: 100%;
-  margin: 30px 0;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
 .projects__title {
@@ -24,16 +25,15 @@
 @media (min-width: 600px) {
   .projects__title {
     width: 40vw;
+    max-width: 492px;
     height: 100px;
     margin-bottom: 30px;
     border-radius: 0px 15px 30px 0px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .projects__title {
-    width: 30vw;
-    height: 130px;
-    border-radius: 0px 20px 40px 0px;
+    border-radius: 20px 20px 30px 30px;
   }
 }

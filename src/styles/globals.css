@@ -1,9 +1,9 @@
 :root {
-  --blue: #0C45AD;
-  --orange: #FF702E;
-  --white: #E9E6E9;
-  --black: #060B10;
-  --background: #1E3242;
+  --blue: #0c45ad;
+  --orange: #ff702e;
+  --white: #e9e6e9;
+  --black: #060b10;
+  --background: #1e3242;
   font-size: 62.5%;
 }
 
@@ -11,7 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 body {
@@ -30,18 +30,21 @@ a {
   color: var(--white);
 }
 
-p, button {
+p,
+button {
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 500;
 }
 
-h1, h2{
+h1,
+h2 {
   margin: 0;
 }
 
-h3, h4 {
+h3,
+h4 {
   margin: 0;
   font-size: 1.8rem;
   line-height: 2.3rem;
@@ -56,7 +59,7 @@ p > span {
 }
 
 button {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .blue-box {
@@ -92,14 +95,17 @@ a:focus {
 }
 
 @media (min-width: 600px) {
-  a, p, button {
+  a,
+  p,
+  button {
     font-size: 2.1rem;
     line-height: 2.4rem;
   }
   p > span {
     font-size: 1.9rem;
   }
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 2.8rem;
   }
   .blue-border {
@@ -107,37 +113,5 @@ a:focus {
   }
   .orange-border {
     border: 5px solid var(--orange);
-  }
-}
-
-@media (min-width: 1000px) {
-  a, p, button {
-    font-size: 2.1rem;
-    line-height: 2.4rem;
-  }
-  p > span {
-    font-size: 1.9rem;
-  }
-  h3, h4 {
-    font-size: 2.4rem;
-  }
-}
-
-@media (min-width: 1700px) {
-  a, p, button {
-    font-size: 3.4rem;
-    line-height: 4rem;
-  }
-  p > span {
-    font-size: 3rem;
-  }
-  h3, h4 {
-    font-size: 4rem;
-  }
-  .blue-border {
-    border: 8px solid var(--blue);
-  }
-  .orange-border {
-    border: 8px solid var(--orange);
   }
 }

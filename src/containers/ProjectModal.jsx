@@ -49,9 +49,11 @@ const ProjectModal = ({ index, open }) => {
           <Link href={urlWeb} passHref>
             <LinkButton index={index}>SEE PROJECT</LinkButton>
           </Link>
-          <Link href={urlGithub} passHref>
-            <LinkButton index={-1}>GITHUB</LinkButton>
-          </Link>
+          {urlGithub && (
+            <Link href={urlGithub} passHref>
+              <LinkButton index={-1}>GITHUB</LinkButton>
+            </Link>
+          )}
         </div>
       </div>
     </div>

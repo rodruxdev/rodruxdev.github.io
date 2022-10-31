@@ -47,6 +47,16 @@
   transform: scale(0.9) translateX(203%) translateY(15.5%);
 }
 
+.project-card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+
 .project-card__text {
   display: -webkit-box;
   -webkit-line-clamp: 3;

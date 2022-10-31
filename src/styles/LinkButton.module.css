@@ -1,5 +1,6 @@
 .link-button {
   width: 100%;
+  max-width: 350px;
   border-radius: 8px;
   padding-block: 10px;
   display: grid;

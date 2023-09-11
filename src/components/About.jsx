@@ -7,7 +7,8 @@ const About = () => {
       <div className={`${styles.about__decoration} orange-border`}></div>
       <div className={`${styles['about__text-container']} blue-box`}>
         <p className={styles.about__text}>
-          I develop innovative web apps with empathy to obtain effective and simple solutions. I am passionate about learning, entrepreneurship and the future of technology.
+          I build web applications with broad understanding of the problem to obtain effective and adaptable solutions. I aspire to address major global challenges, particularly in areas related to
+          climate change and social inequalities.
         </p>
       </div>
     </div>

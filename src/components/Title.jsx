@@ -13,7 +13,7 @@ const Title = () => {
         <h2 className={styles.title__nickname}>RODRUX</h2>
       </div>
       <div className={`${styles.title__container} ${styles['title__position-container']}`}>
-        <h3 className={styles.title__position}>FRONTEND DEVELOPER</h3>
+        <h3 className={styles.title__position}>FULLSTACK DEVELOPER</h3>
       </div>
     </div>
   );

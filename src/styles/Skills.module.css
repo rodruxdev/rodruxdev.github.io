@@ -69,7 +69,6 @@
     padding-left: 30px;
   }
   .skills__list li::marker {
-    color: var(--white);
     font-size: 1.8rem;
   }
 }

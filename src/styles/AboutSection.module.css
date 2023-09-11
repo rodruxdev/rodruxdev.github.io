@@ -3,10 +3,10 @@
   max-width: 1200px;
   margin: 30px auto;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .about-section_title {

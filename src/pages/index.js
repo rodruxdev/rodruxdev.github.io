@@ -9,6 +9,7 @@ import Projects from '@containers/Projects';
 import ProjectModal from '@containers/ProjectModal';
 import { useContext } from 'react';
 import AppContext from '@context/AppContext';
+import ExperienceSection from '@containers/ExperienceSection';
 
 export default function Home() {
   const { state } = useContext(AppContext);
@@ -45,6 +46,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutSection />
+      <ExperienceSection />
       <Projects />
       <AbilitiesSection />
       <Footer />

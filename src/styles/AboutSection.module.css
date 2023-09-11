@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 30px auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   gap: 30px;
   flex-direction: column;
@@ -38,7 +38,7 @@
 
 @media (min-width: 1000px) {
   .about-section {
-    height: 450px;
+    height: 520px;
     margin-top: 0;
     display: grid;
     gap: 0;

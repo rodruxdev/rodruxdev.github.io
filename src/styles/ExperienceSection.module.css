@@ -1,0 +1,32 @@
+.experience-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.experience-section_title {
+  height: 60px;
+  display: grid;
+  padding-left: 8%;
+  padding-inline-end: 5%;
+  justify-content: start;
+  align-items: center;
+  border-radius: 20px 0px 0px 10px;
+}
+
+@media (min-width: 600px) {
+  .experience-section_title {
+    height: 80px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .experience-section_title {
+    border-radius: 30px 20px 30px 20px;
+  }
+}

@@ -15,7 +15,7 @@ const Projects = () => {
   };
   return (
     <section className={styles.projects}>
-      <div className={`${styles.projects__title} blue-box`}>
+      <div className={`${styles.projects__title} orange-box`}>
         <Subtitle>My Projects</Subtitle>
       </div>
       <ProjectsCarrousel />

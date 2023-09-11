@@ -13,8 +13,11 @@ const Stack = () => {
           <StackItem icon="html">HTML</StackItem>
           <StackItem icon="css">CSS</StackItem>
           <StackItem icon="js">JAVASCRIPT</StackItem>
-          <StackItem icon="react">REACT.JS</StackItem>
+          <StackItem icon="ts">TYPESCRIPT</StackItem>
           <StackItem icon="python">PYTHON</StackItem>
+          <StackItem icon="react">REACT.JS</StackItem>
+          <StackItem icon="next">NEXT.JS</StackItem>
+          <StackItem icon="node">NODE.JS</StackItem>
         </ul>
       </div>
     </div>

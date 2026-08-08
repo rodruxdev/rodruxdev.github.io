@@ -1,0 +1,10 @@
+---
+import Skills from './Skills.tsx';
+import Stack from './Stack.astro';
+import styles from '@styles/AbilitiesSection.module.css';
+---
+
+<section class={styles.abilities}>
+  <Skills client:visible />
+  <Stack />
+</section>

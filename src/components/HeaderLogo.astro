@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo-naranja-claro.svg';
+import styles from '@styles/HeaderLogo.module.css';
+---
+
+<div class={`${styles['header-logo']} blue-box`}>
+  <a href="/" class={styles['header-logo__logo']}>
+    <Image src={logo} alt="Logo de Rodrux, Rodrigo Goitia" width={50} height={50} loading="eager" class={styles['header-logo__image']} />
+  </a>
+  <p class={styles['header-logo__name']}>RODRIGO GOITIA</p>
+</div>

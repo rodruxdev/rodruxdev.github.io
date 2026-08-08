@@ -1,0 +1,28 @@
+---
+import { FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import type { IconType } from 'react-icons';
+import styles from '@styles/ContactButton.module.css';
+
+type Social = 'linkedin' | 'github' | 'twitter' | 'instagram';
+
+interface Props {
+  href: string;
+  social: Social;
+}
+
+const { href, social } = Astro.props;
+const icons: Record<Social, IconType> = {
+  linkedin: FaLinkedin,
+  github: FaGithubSquare,
+  twitter: FaTwitterSquare,
+  instagram: FaInstagramSquare,
+};
+const Icon = icons[social];
+---
+
+<a href={href} aria-label={`Rodrux ${social}`} target="_blank" rel="noopener noreferrer" class={styles['contact-button']}>
+  <div class={styles['contact-button__container']}>
+    <Icon className={styles['contact-button__icon']} />
+    <p class={styles['contact-button__user']}><slot /></p>
+  </div>
+</a>

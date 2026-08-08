@@ -1,0 +1,20 @@
+---
+import AboutSection from '@containers/AboutSection.astro';
+import AbilitiesSection from '@containers/AbilitiesSection.astro';
+import ExperienceSection from '@containers/ExperienceSection.astro';
+import Footer from '@containers/Footer.astro';
+import Header from '@containers/Header.astro';
+import Hero from '@containers/Hero.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <Header />
+  <main>
+    <Hero />
+    <AboutSection />
+    <ExperienceSection />
+    <AbilitiesSection />
+  </main>
+  <Footer />
+</BaseLayout>

@@ -2,27 +2,37 @@
   "name": "rodruxdev.github.io",
   "version": "0.1.0",
   "private": true,
-  "engines": { "node": "18.x"},
+  "engines": {
+    "node": ">=24.16.0 <25"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "dev": "astro dev",
+    "check": "astro check",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{astro,ts,tsx,css}\" \"*.{js,mjs,json,md,yml,yaml}\""
   },
   "dependencies": {
-    "next": "12.1.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-responsive": "^9.0.0-beta.6"
+    "@astrojs/react": "6.0.2",
+    "astro": "7.2.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-icons": "^5.7.0"
   },
   "devDependencies": {
-    "eslint": "8.13.0",
-    "eslint-config-next": "^12.1.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
+    "@astrojs/check": "0.9.10",
+    "@eslint/js": "10.0.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "eslint": "10.8.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-astro": "3.1.0",
+    "globals": "17.9.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "0.14.1",
+    "sharp": "0.35.3",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.66.0"
   }
 }

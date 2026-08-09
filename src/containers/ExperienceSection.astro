@@ -1,0 +1,12 @@
+---
+import Experience from '@components/Experience.astro';
+import Subtitle from '@components/Subtitle.astro';
+import styles from '@styles/ExperienceSection.module.css';
+---
+
+<section class={styles['experience-section']}>
+  <div class={`${styles['experience-section_title']} blue-box`}>
+    <Subtitle>MY EXPERIENCE</Subtitle>
+  </div>
+  <Experience />
+</section>

@@ -1,0 +1,15 @@
+---
+import Quote from '@components/Quote.astro';
+import styles from '@styles/DecorationQuotes.module.css';
+---
+
+<div class={`${styles.decoration} blue-border`}>
+  <div class={`${styles.decoration__orange} orange-border`}></div>
+  <div class={`${styles.decoration__blue} blue-border`}></div>
+  <Quote category="learningDesktop">PASSIONATE ABOUT LEARNING</Quote>
+  <Quote category="inclusionDesktop">
+    &quot;INCLUSSION IS THE KEY TO GROWTH&quot;
+    <br />
+    <span>- Jesse Jackson</span>
+  </Quote>
+</div>

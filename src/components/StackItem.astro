@@ -1,0 +1,32 @@
+---
+import { BiLogoTypescript } from 'react-icons/bi';
+import { FaCss3Alt, FaGitAlt, FaHtml5, FaJs, FaNode, FaPython, FaReact } from 'react-icons/fa';
+import { SiNextdotjs } from 'react-icons/si';
+import type { IconType } from 'react-icons';
+import styles from '@styles/StackItem.module.css';
+
+type StackIcon = 'git' | 'html' | 'css' | 'js' | 'ts' | 'python' | 'react' | 'next' | 'node';
+
+interface Props {
+  icon: StackIcon;
+}
+
+const { icon } = Astro.props;
+const icons: Record<StackIcon, IconType> = {
+  git: FaGitAlt,
+  html: FaHtml5,
+  css: FaCss3Alt,
+  js: FaJs,
+  ts: BiLogoTypescript,
+  python: FaPython,
+  react: FaReact,
+  next: SiNextdotjs,
+  node: FaNode,
+};
+const Icon = icons[icon];
+---
+
+<li class={styles.stack}>
+  <Icon className={styles.stack__icon} />
+  <p class={styles.stack__text}><slot /></p>
+</li>

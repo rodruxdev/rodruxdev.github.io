@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import picture from '../assets/rodrigo-goitia.png';
+import styles from '@styles/Picture.module.css';
+---
+
+<div class={styles.picture}>
+  <div class={`${styles['picture__decoration--orange']} orange-border`}></div>
+  <div class={`${styles['picture__decoration--blue']} blue-border`}></div>
+  <div class={styles.picture__image}>
+    <Image
+      src={picture}
+      alt="Fotografía de Rodrigo Goitia"
+      width={500}
+      height={500}
+      widths={[252, 405, 500]}
+      sizes="(min-width: 1000px) 32.5vw, (min-width: 600px) 405px, 252px"
+      class={styles['picture__image-content']}
+    />
+  </div>
+</div>

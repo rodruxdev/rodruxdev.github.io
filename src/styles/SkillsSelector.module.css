@@ -24,6 +24,11 @@
   border-color: var(--orange);
 }
 
+.skills-selector__label:focus-within {
+  outline: 3px solid var(--white);
+  outline-offset: 4px;
+}
+
 .skills-selector__input {
   width: 20px;
   height: 20px;

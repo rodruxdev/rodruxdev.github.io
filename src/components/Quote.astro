@@ -1,0 +1,21 @@
+---
+import styles from '@styles/Quote.module.css';
+
+type Category = 'talentMobile' | 'learningMobile' | 'learningDesktop' | 'inclusionDesktop';
+
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props;
+const categories: Record<Category, string> = {
+  talentMobile: `${styles.quote} ${styles['quote__talent']} orange-box`,
+  learningMobile: `${styles.quote} ${styles['quote__learning--mobile']} blue-border`,
+  learningDesktop: `${styles.quote} ${styles['quote__learning--desktop']} blue-box`,
+  inclusionDesktop: `${styles.quote} ${styles['quote__inclusion']} orange-box`,
+};
+---
+
+<div class={categories[category]}>
+  <p class={styles.quote__text}><slot /></p>
+</div>

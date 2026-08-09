@@ -1,0 +1,21 @@
+---
+import About from '@components/About.astro';
+import Quote from '@components/Quote.astro';
+import Subtitle from '@components/Subtitle.astro';
+import styles from '@styles/AboutSection.module.css';
+---
+
+<section class={styles['about-section']}>
+  <div class={`${styles['about-section_title']} orange-box`}>
+    <Subtitle>ABOUT ME</Subtitle>
+  </div>
+  <About />
+  <div class={styles['about-section__quotes']}>
+    <Quote category="talentMobile">
+      &quot;LET YOUR TALENT CREATE FOR OTHERS&quot;
+      <br />
+      <span>- Rodrigo Goitia</span>
+    </Quote>
+    <Quote category="learningMobile">PASSIONATE ABOUT LEARNING</Quote>
+  </div>
+</section>

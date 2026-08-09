@@ -1,0 +1,17 @@
+---
+import ContactButton from '@components/ContactButton.astro';
+import Subtitle from '@components/Subtitle.astro';
+import styles from '@styles/Contact.module.css';
+---
+
+<div class={styles.contact}>
+  <div class={`${styles.contact__title} orange-box`}>
+    <Subtitle>CONTACT ME</Subtitle>
+  </div>
+  <div class={`${styles.contact__links} blue-box`}>
+    <ContactButton href="https://www.linkedin.com/in/rodrigo-goitia/" social="linkedin">Rodrigo Goitia</ContactButton>
+    <ContactButton href="https://github.com/rodruxdev" social="github">@rodruxdev</ContactButton>
+    <ContactButton href="https://twitter.com/rodruxdev" social="twitter">@rodruxdev</ContactButton>
+    <ContactButton href="https://www.instagram.com/rodruxdev" social="instagram">@rodruxdev</ContactButton>
+  </div>
+</div>

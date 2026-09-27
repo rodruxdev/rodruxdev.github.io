@@ -1,11 +1,11 @@
 ---
-import { BiLogoTypescript } from 'react-icons/bi';
-import { FaCss3Alt, FaGitAlt, FaHtml5, FaJs, FaNode, FaPython, FaReact } from 'react-icons/fa';
-import { SiNextdotjs } from 'react-icons/si';
+import { FaNode, FaPython, FaReact } from 'react-icons/fa';
+import { DiRedis } from 'react-icons/di';
+import { SiClaudecode, SiDocker, SiGo, SiMongodb, SiNextdotjs, SiOpencode, SiPostgresql, SiTypescript } from 'react-icons/si';
 import type { IconType } from 'react-icons';
 import styles from '@styles/StackItem.module.css';
 
-type StackIcon = 'git' | 'html' | 'css' | 'js' | 'ts' | 'python' | 'react' | 'next' | 'node';
+type StackIcon = 'ts' | 'python' | 'react' | 'next' | 'node' | 'go' | 'postgres' | 'mongo' | 'docker' | 'redis' | 'claude-code' | 'opencode';
 
 interface Props {
   icon: StackIcon;
@@ -13,15 +13,18 @@ interface Props {
 
 const { icon } = Astro.props;
 const icons: Record<StackIcon, IconType> = {
-  git: FaGitAlt,
-  html: FaHtml5,
-  css: FaCss3Alt,
-  js: FaJs,
-  ts: BiLogoTypescript,
+  ts: SiTypescript,
   python: FaPython,
   react: FaReact,
   next: SiNextdotjs,
   node: FaNode,
+  go: SiGo,
+  postgres: SiPostgresql,
+  mongo: SiMongodb,
+  docker: SiDocker,
+  redis: DiRedis,
+  'claude-code': SiClaudecode,
+  opencode: SiOpencode,
 };
 const Icon = icons[icon];
 ---

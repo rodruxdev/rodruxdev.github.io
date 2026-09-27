@@ -31,11 +31,11 @@ export default function Skills() {
       </h3>
       <div className={styles['skills__list-container']}>
         <ul id="skills-list-1" className={`${styles.skills__list} ${classes[0]}`} aria-hidden={index !== 0}>
-          <SkillsItem>Develop responsive web pages or web apps with a high level of detail in design and user experience.</SkillsItem>
-          <SkillsItem>Use APIs to show and change information in features according the business logic using storytelling.</SkillsItem>
-          <SkillsItem>Optimize performance to reduce load time and improve user experience.</SkillsItem>
-          <SkillsItem>Ensure great accessibility in features for screen-readers and keyboard navigation.</SkillsItem>
-          <SkillsItem>Develop reusable and quality code and its technical documentation.</SkillsItem>
+          <SkillsItem>Build fullstack features across interfaces, APIs, and data pipelines.</SkillsItem>
+          <SkillsItem>Use spec-driven development and coding agents to build and verify features end to end.</SkillsItem>
+          <SkillsItem>Design maintainable systems for modern web applications, including service boundaries and data flows.</SkillsItem>
+          <SkillsItem>Build LLM tools that connect systems and automate workflows.</SkillsItem>
+          <SkillsItem>Add monitoring to find performance problems and improve user experience.</SkillsItem>
         </ul>
         <ul id="skills-list-2" className={`${styles.skills__list} ${classes[1]}`} aria-hidden={index !== 1}>
           <SkillsItem>I look for new points of view and an inclusive work space through effective communication and active listening.</SkillsItem>

@@ -1,12 +1,14 @@
 .stack {
   width: 100%;
   max-width: 410px;
+  height: max-content;
   padding-top: 60px;
   padding-bottom: 50px;
   padding-left: 7%;
   border-right: none;
   border-radius: 20px 0px 0px 50px;
   justify-self: end;
+  align-self: start;
   display: grid;
   justify-content: center;
   grid-column: 2 / 4;
